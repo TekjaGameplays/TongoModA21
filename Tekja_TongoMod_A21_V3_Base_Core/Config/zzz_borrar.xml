@@ -1,0 +1,201 @@
+<raiz>
+
+	
+	
+	<append xpath="/materials">
+
+
+
+
+
+		<!--<lootgroup name="groupQuestRewardSkillMagazinesAll01" count="3" >
+			<item name="bowsSkillMagazine" count="2"/>
+			<item name="spearsSkillMagazine" count="2"/>
+			<item name="clubsSkillMagazine" count="2"/>
+			<item name="sledgehammersSkillMagazine" count="2"/>
+			<item name="harvestingToolsSkillMagazine" count="2"/>
+			<item name="knucklesSkillMagazine" count="2"/>
+			<item name="bladesSkillMagazine" count="2"/>
+			<item name="repairToolsSkillMagazine" count="2"/>
+			<item name="salvageToolsSkillMagazine" count="2"/>
+
+			<item name="handgunsSkillMagazine" count="2"/>
+			<item name="shotgunsSkillMagazine" count="2"/>
+			<item name="riflesSkillMagazine" count="2"/>
+			<item name="machineGunsSkillMagazine" count="2"/>
+			<item name="explosivesSkillMagazine" count="2"/>
+			<item name="armorSkillMagazine" count="2"/>
+			<item name="roboticsSkillMagazine" count="2"/>
+
+			<item name="workstationSkillMagazine" count="2"/>
+			<item name="medicalSkillMagazine" count="2"/>
+			<item name="foodSkillMagazine" count="2"/>
+			<item name="seedSkillMagazine" count="2"/>
+			<item name="vehiclesSkillMagazine" count="2"/>
+			<item name="electricianSkillMagazine" count="2"/>
+			<item name="trapsSkillMagazine" count="2"/>
+		</lootgroup>
+
+
+		<lootgroup name="groupQuestRewardSkillMagazinesAll" count="all">
+			<item group="groupQuestRewardSkillMagazinesAll01" />
+		</lootgroup>
+
+
+		<lootcontainer name="questRewardSkillMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSkillMagazinesAll"/>
+		</lootcontainer>-->
+
+
+
+
+
+
+
+
+
+
+		<!-- YA PUESTO EN LOOT Y TRADER -->
+
+		<!--foodCandy7DaysTM
+		drinkRomulanBeerTM
+
+		foodOmeletTM
+		foodOmeletPotatoTM-->
+
+		
+		
+        <!-- FALTA PONER TODO ESTO EN LOOT Y TRADER -->
+
+		<!--drugAtomJunkiesSchematic
+		drugCovertCatsSchematic
+		drugEyeKandySchematic
+		drugHackersSchematic
+		drugHealthBarSchematic
+		drugJailBreakersSchematic
+		drugNerdTatsSchematic
+		drugOhShitzDropsSchematic
+		drugRockBustersSchematic
+		drugSkullCrushersSchematic
+		drugSugarButtsSchematic
+
+		drinkCanMegaCrushSchematic
+		medicalBloodBagSchematic
+		drugVitaminsSchematic
+		drugPainkillersSchematic
+		resourceAcidSchematic
+
+		foodPastaBaseTMSchematic
+		foodPastaYuccaTMSchematic
+		foodPastaPotatoTMSchematic
+		foodPastaPumpkinTMSchematic
+		
+
+		foodCanBeefSchematic
+		foodCanLambSchematic
+		foodCanChickenSchematic
+		foodCanChiliSchematic
+		foodCanShamTMSchematic
+		foodCanPastaSchematic
+		foodCanMisoSchematic
+		foodCanStockSchematic
+		foodCanSoupSchematic
+		foodCanPearsSchematic
+		foodCanPeasSchematic
+		foodCanSalmonSchematic
+		foodCanTunaSchematic
+		foodCanCatfoodSchematic
+		foodCanDogfoodSchematic
+
+		foodStewBeefTMSchematic
+		foodStewLambTMSchematic
+		foodStewChickenTMSchematic
+		foodStewChiliTMSchematic
+		foodStewShamTMSchematic
+		foodPastaMushroomsTMSchematic
+		
+		foodSoupMisoTMSchematic
+		foodSoupStockTMSchematic
+		foodSoupChickenTMSchematic
+		foodPearsCakeTMSchematic
+		foodPeasHamTMSchematic
+		foodSalmonTacoTMSchematic
+		foodTunaBreadTMSchematic
+		foodExtraCatTMSchematic
+		foodExtraDogTMSchematic
+
+		foodSteakPotatoTMSchematic-->
+
+		<!--XXXXXXXXXXXXXXXX-->
+
+
+		<!--todas las revistas-->
+		<!--<lootgroup name="groupQuestRewardSkillMagazinesAll01" count="3" >
+			<item name="bowsSkillMagazine" count="2"/>
+			<item name="spearsSkillMagazine" count="2"/>
+			<item name="clubsSkillMagazine" count="2"/>
+			<item name="sledgehammersSkillMagazine" count="2"/>
+			<item name="harvestingToolsSkillMagazine" count="2"/>
+			<item name="knucklesSkillMagazine" count="2"/>
+			<item name="bladesSkillMagazine" count="2"/>
+			<item name="repairToolsSkillMagazine" count="2"/>
+			<item name="salvageToolsSkillMagazine" count="2"/>
+
+			<item name="handgunsSkillMagazine" count="2"/>
+			<item name="shotgunsSkillMagazine" count="2"/>
+			<item name="riflesSkillMagazine" count="2"/>
+			<item name="machineGunsSkillMagazine" count="2"/>
+			<item name="explosivesSkillMagazine" count="2"/>
+			<item name="armorSkillMagazine" count="2"/>
+			<item name="roboticsSkillMagazine" count="2"/>
+
+			<item name="workstationSkillMagazine" count="2"/>
+			<item name="medicalSkillMagazine" count="2"/>
+			<item name="foodSkillMagazine" count="2"/>
+			<item name="seedSkillMagazine" count="2"/>
+			<item name="vehiclesSkillMagazine" count="2"/>
+			<item name="electricianSkillMagazine" count="2"/>
+			<item name="trapsSkillMagazine" count="2"/>
+		</lootgroup>-->
+
+
+
+		<!--esta seria una prueba para comprobar que herramienta se esta usando para subir los niveles como antes-->
+		<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="countRock" operation="add" value="1"/>-->
+
+
+		<!--revisar esto para llenado de vasos nuevos-->
+		<!--<effect_group name="light/douse torch flame" tiered="false">
+			<triggered_effect trigger="onSelfWaterSubmerge" action="RemoveParticleEffectFromEntity" particle="torch02_firePrefab" parent_transform="TorchLight"/>
+			<triggered_effect trigger="onSelfWaterSurface" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" parent_transform="TorchLight"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" parent_transform="TorchLight">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfEquipStart" action="RemoveParticleEffectFromEntity" particle="torch02_firePrefab" parent_transform="TorchLight">
+				<requirement name="CVarCompare" cvar="_underwater" operation="GTE" value="1"/>
+			</triggered_effect>
+		</effect_group>-->
+		
+
+
+
+
+		<!--<objective type="EntityKill" value="10" phase="1"/>-->
+		<!--<requirement type="Holding" id="" phase="1"/>-->
+		<!--<requirement name="HoldingItemHasTags" tags="BareHand" phase="1"/>-->
+		<!--<requirement type="HoldType" id="" phase="1"/>-->
+		<!--<hold_type id="0" phase="1"/>-->
+		<!--<requirement phase="1">
+			<hold_type id="0"/>
+		</requirement>-->
+		<!--<requirement HoldType="0" phase="1"/>-->
+		<!--<objective type="EntityKill" value="10" phase="1">
+			<requirement name="PlayerLevel" operation="LTE" value="1"/>
+		</objective>-->
+
+
+		<!--<objective type="EntityKill" value="10" id="zombieNurse,zombieNurseFeral,zombieNurseRadiated" phase="1"/>-->
+		
+	</append>
+	
+</raiz>

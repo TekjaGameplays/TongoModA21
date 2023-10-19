@@ -1,0 +1,774 @@
+<raiz>
+
+
+	<!-- REMOVE CORN FROM TOILET -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupToilet02']/item[@name='plantedCorn1']"/>
+
+	<!-- REMOVE VANILLA CAN SHAM SCHEMATIC -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupShamwaySafe']/item[@name='foodCanShamSchematic']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupQuestSchematics']/item[@name='foodCanShamSchematic']"/>
+
+	<!-- REMOVE SEED MAGAZINES FROM LOOT -->
+	<remove xpath="/lootcontainers/lootgroup[@name='skillMagazines']/item[@name='seedSkillMagazine']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupQuestRewardSkillMagazinesAll01']/item[@name='seedSkillMagazine']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupBuriedSuppliesT1_03']/item[@name='seedSkillMagazine']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='groupShamwayCrate02']/item[@name='seedSkillMagazine']"/>
+
+	<!-- REMOVE VANILLA YUCCA JUICE FROM LOOT -->
+	<remove xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']/item[@name='drinkJarYuccaJuice']"/>
+	<remove xpath="/lootcontainers/lootgroup[@name='airdropdrink']/item[@name='drinkJarYuccaJuice']"/>
+
+
+	<!-- INCLUDE YUCCA JUICE CLASSIC IN LOOT -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']">
+		<item name="drinkJarYuccaClassicTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='airdropdrink']">
+		<item name="drinkJarYuccaClassicTM"/>
+	</append>
+
+	
+	<!-- INCLUDE ROMULAN BEER IN LOOT -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksRare']">
+		<item name="drinkRomulanBeerTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupBeerCooler01']">
+		<item name="drinkRomulanBeerTM" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupLiquorMed01']">
+		<item name="drinkRomulanBeerTM" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupLiquorLarge01']">
+		<item name="drinkRomulanBeerTM" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupLiquorBonus']">
+		<item name="drinkRomulanBeerTM" loot_prob_template="medLow"/>
+	</append>
+
+	
+	<!-- INCLUDE BLUE PAPER IN LOOT -->
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrashCommon']">
+		<item name="resourceBluePaper" count="1,2" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+		<item name="resourceBluePaper" count="1" loot_prob_template="high"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='booksRareOnlyScaled']">
+		<item name="resourceBluePaper" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupSchematicsAll']">
+		<item name="resourceBluePaper" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='weaponSkillMagazinesOnly']">
+		<item name="resourceBluePaper"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupMilitaryBooks']">
+		<item name="resourceBluePaper"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT0']">
+		<item name="resourceBluePaper"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="resourceBluePaper"/>
+	</append>
+
+	
+	<!-- INCREASE EGGS IN BIRDNEST -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupBirdNest02']">
+		<item name="foodEgg" count="1,2" loot_prob_template="high"/>
+	</append>
+
+	
+	<!-- INCLUDE SPECIAL ITEMS IN LOOT GROUP -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupMoPower01']">
+		<item name="itemToolKryptonite" count="1" loot_prob_template="med"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupPassNGas01']">
+		<item name="itemToolFluxCapacitor" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMedLow']">
+		<item name="itemToolLonginusSpear" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWorkingStiffs01']">
+		<item name="itemToolSonicScrewdiver" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='booksAllScaled']">
+		<item name="itemToolDonQuixote" count="1" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsMedLow']">
+		<item name="meleeWpnSpikedClub" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeWpnGrapheneSledgehammerTM" count="1" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT3']">
+		<item name="meleeToolMegaAugerTM" count="1" loot_prob_template="Low"/>
+		<item name="meleeToolMegaChainsawTM" count="1" loot_prob_template="Low"/>
+		<item name="meleeToolRepairMegaNailgunTM" count="1" loot_prob_template="Low"/>
+		<item name="meleeToolSalvageMegaImpactDriverTM" count="1" loot_prob_template="Low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT1']">
+		<item name="meleeToolMegaBreakerTM" count="1" loot_prob_template="Low"/>
+		<item name="meleeWpnMegaCutterTM" count="1" loot_prob_template="Low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingUncommon']">
+		<item name="resourceGraphite" count ="10,50"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuildingRare']">
+		<item name="resourceGrapheneTM" count ="1,5"/>
+	</append>
+
+	
+	<!-- ADJUST TOILED LOOT -->
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupToilet01']">
+		<item name="drinkJarRiverWater" count="1" loot_prob_template="high"/>
+		<item name="resourceTurd" count="1,2" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupToilet02']">
+		<item name="drinkJarRiverWater" count="1" loot_prob_template="high"/>
+		<item name="gunHandgunT1Pistol" count="1" loot_prob_template="med"/>
+		<item name="resourcePaper" count="1,3" loot_prob_template="veryLow"/>
+		<item name="meleeWpnBladeT1HuntingKnife" count="1" loot_prob_template="med"/>
+		<item name="resourceTurd" count="1,2" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupToilet']">
+		<item group="groupToilet02" loot_prob_template="med" force_prob="true"/>
+		<item name="resourceTurd" count="1,2" loot_prob_template="medLow"/>
+	</append>
+
+
+	<!-- INCREASED LOOT FOR AIRDROP, ZPACK AND TREASURES -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+		<item group="groupAirDrop01" count="1"/>
+		<item group="groupAirDrop02" count="1"/>
+		<item group="groupAirDrop03" loot_prob_template="low" force_prob="true"/>
+		<item name="resourceBluePaper" count="5,10" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg']">
+		<item group="groupAmmoMedium" count="1"/>
+		<item group="groupZpackReg01" count="2"/>
+		<item group="groupZpackReg02" loot_prob_template="med" force_prob="true"/>
+		<item group="groupZpackReg03" loot_prob_template="med" force_prob="true"/>
+		<item name="resourceBluePaper" count="1,2" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong']">
+		<item group="groupAmmoLarge" count="2"/>
+		<item group="groupZpackStrong01" count="2"/>
+		<item group="groupZpackStrong02" loot_prob_template="high" force_prob="true"/>
+		<item group="groupZpackStrong03" loot_prob_template="med" force_prob="true"/>
+		<item name="resourceBluePaper" count="2,5" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss']">
+		<item group="groupAmmoLarge" count="3"/>
+		<item group="groupZpackBoss01" count="3"/>
+		<item group="groupZpackBoss02" count="2"/>
+		<item group="groupZpackBoss03" loot_prob_template="high" force_prob="true"/>
+		<item name="resourceBluePaper" count="3,8" loot_prob_template="med"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupBuriedTreasure']">
+		<item group="groupValuablesExtraLarge" count="2,4"/>
+		<item group="groupAmmoPileLarge" count="3,5"/>
+		<item name="resourceBluePaper" count="5,10" loot_prob_template="med"/>
+	</append>
+
+
+	<!-- FOOD LOOT -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestMedical']">
+		<item name="foodSugarTM" count="1,3" loot_prob_template="med"/>
+		<item name="foodCookingOilTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodPastaBaseTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodPastaMushroomsTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewBeefTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewLambTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewChickenTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewChiliTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewShamTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupMisoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupStockTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupChickenTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPearsCakeTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPeasHamTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSalmonTacoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodTunaBreadTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodExtraCatTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodExtraDogTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaYuccaTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaPotatoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaPumpkinTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSteakPotatoTM" count="1" loot_prob_template="medLow"/>
+		<item name="drinkJarYuccaClassicTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodCandy7DaysTM" count="1,3" loot_prob_template="med"/>
+		<item name="foodOmeletTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodOmeletPotatoTM" count="1" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodRare']">
+		<item name="foodSugarTM" count="1,3" loot_prob_template="med"/>
+		<item name="foodCookingOilTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodPastaBaseTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodPastaMushroomsTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewBeefTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewLambTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewChickenTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewChiliTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodStewShamTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupMisoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupStockTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSoupChickenTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPearsCakeTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPeasHamTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSalmonTacoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodTunaBreadTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodExtraCatTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodExtraDogTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaYuccaTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaPotatoTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodPastaPumpkinTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodSteakPotatoTM" count="1" loot_prob_template="medLow"/>
+		<item name="drinkJarYuccaClassicTM" count="1,2" loot_prob_template="med"/>
+		<item name="foodCandy7DaysTM" count="1,3" loot_prob_template="med"/>
+		<item name="foodOmeletTM" count="1" loot_prob_template="medLow"/>
+		<item name="foodOmeletPotatoTM" count="1" loot_prob_template="medLow"/>
+	</append>
+
+
+	<!-- MEDIC & QUIMIC -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalCommon']">
+		<item name="resourceTallowTM" count="1,5" loot_prob_template="low"/>
+		<item name="resourceBiomassTM" count="1,2" loot_prob_template="low"/>
+		<item name="medicalAlcoholTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="resourceBioFuelTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidBandageTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidKitTM" count="1,2" loot_prob_template="veryLow"/>	
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalUncommon']">
+		<item name="resourceTallowTM" count="1,5" loot_prob_template="low"/>
+		<item name="resourceBiomassTM" count="1,2" loot_prob_template="low"/>
+		<item name="medicalAlcoholTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="resourceBioFuelTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidBandageTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidKitTM" count="1,2" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupMedicalRare']">
+		<item name="resourceTallowTM" count="1,5" loot_prob_template="med"/>
+		<item name="resourceBiomassTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="medicalAlcoholTM" count="1,2" loot_prob_template="med"/>
+		<item name="resourceBioFuelTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="medicalFirstAidBandageTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidKitTM" count="1,2" loot_prob_template="veryLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupChem01']">
+		<item name="resourceTallowTM" count="1,5" loot_prob_template="med"/>
+		<item name="resourceBiomassTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="medicalAlcoholTM" count="1,2" loot_prob_template="med"/>
+		<item name="resourceBioFuelTM" count="1,2" loot_prob_template="medLow"/>
+		<item name="medicalFirstAidBandageTM" count="1,2" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidKitTM" count="1,2" loot_prob_template="veryLow"/>
+	</append>
+
+
+	<!-- RECEIPES MODS (TONGOMOD) -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralRare']">
+		<item name="resourceBluePaper" count="1,2" loot_prob_template="med"/>
+		<item name="modSniperwolfBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modRagnarBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modChopperBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modJordanBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modUchihaBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modSilverBraceletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modGoldBraceletTMSchematic" count="1" loot_prob_template="medLow"/>
+		<item name="modRubyBraceletTMSchematic" count="1" loot_prob_template="low"/>
+		<item name="modObserverHatTMSchematic" count="1" loot_prob_template="medLow"/>
+		<item name="modSonicShoesTMSchematic" count="1" loot_prob_template="medLow"/>	
+		<item name="modSportBackpackTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="modMilitaryBackpackTMSchematic" count="1" loot_prob_template="medLow"/>
+		<item name="modMilitaryTacticalBackpackTMSchematic" count="1" loot_prob_template="medLow"/>
+		<item name="modArmorPlatingGrapheneTMSchematic" count="1" loot_prob_template="medlow"/>
+		<item name="armorGrapheneTMSchematic" count="1" loot_prob_template="verylow"/>
+		<item name="armorClothGrapheneTMSchematic" count="1" loot_prob_template="verylow"/>
+		<item name="meleeWpnSpikedClubSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeWpnGrapheneSledgehammerTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeWpnMegaCutterTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="meleeToolMegaBreakerTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="meleeToolMegaAugerTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeToolMegaChainsawTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeToolRepairMegaNailgunTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="meleeToolSalvageMegaImpactDriverTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidBandageTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="medicalFirstAidKitTMSchematic" count="1" loot_prob_template="veryLow"/>
+        
+		
+		<item name="toolBeakerTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="medicalAlcoholTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="resourceBiomassTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="resourceBioFuelTMSchematic" count="1" loot_prob_template="low"/>
+		<item name="resourceCompostSchematic" count="1" loot_prob_template="med"/>
+		<item name="resourceGrapheneTMSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="workingLibrosSchematic" count="1" loot_prob_template="med"/>
+		<item name="workingDysmantleSchematic" count="1" loot_prob_template="low"/>
+		<item name="workingSemillasSchematic" count="1" loot_prob_template="med"/>
+		<item name="workingOvenSchematic" count="1" loot_prob_template="med"/>
+		<item name="workingOchemiSchematic" count="1" loot_prob_template="veryLow"/>
+		<item name="workingAutominerT0Schematic" count="1" loot_prob_template="med"/>
+		<item name="workingAutominerADVSchematic" count="1" loot_prob_template="veryLow"/>
+
+		<item name="drinkJarYuccaClassicTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="drinkRomulanBeerTMSchematic" count="1" loot_prob_template="low"/>
+		<item name="foodCandy7DaysTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="foodOmeletTMSchematic" count="1" loot_prob_template="med"/>
+		<item name="foodOmeletPotatoTMSchematic" count="1" loot_prob_template="low"/>
+		
+
+	</append>
+
+	
+	<!-- MODS LOOT -->
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupArmorModsScaled']">
+		<item name="modSniperwolfBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modRagnarBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modChopperBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modJordanBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modUchihaBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modSilverBraceletTM" count="1" loot_prob_template="medLow"/>
+		<item name="modGoldBraceletTM" count="1" loot_prob_template="low"/>
+		<item name="modRubyBraceletTM" count="1" loot_prob_template="veryLow"/>
+		<item name="modObserverHatTM" count="1" loot_prob_template="low"/>
+		<item name="modSonicShoesTM" count="1" loot_prob_template="low"/>
+		<item name="modSportBackpackTM" count="1" loot_prob_template="medLow"/>
+		<item name="modMilitaryBackpackTM" count="1" loot_prob_template="medlow"/>
+		<item name="modMilitaryTacticalBackpackTM" count="1" loot_prob_template="low"/>
+		<item name="modArmorPlatingGrapheneTM" count="1" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+		<item name="modSniperwolfBraceletTM"/>
+		<item name="modRagnarBraceletTM"/>
+		<item name="modChopperBraceletTM"/>
+		<item name="modJordanBraceletTM"/>
+		<item name="modUchihaBraceletTM"/>
+		<item name="modSportBackpackTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">
+		<item name="modSilverBraceletTM"/>
+		<item name="modSportBackpackTM"/>
+		<item name="modMilitaryBackpackTM"/>
+		<item name="modSonicShoesTM"/>
+		<item name="modArmorPlatingGrapheneTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
+		<item name="modGoldBraceletTM"/>
+		<item name="modRubyBraceletTM"/>
+		<item name="modObserverHatTM"/>
+		<item name="modSonicShoesTM"/>
+		<item name="modMilitaryTacticalBackpackTM"/>
+		<item name="modArmorPlatingGrapheneTM"/>
+	</append>
+
+	<!-- WEAPONS LOOT -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+		<item name="meleeWpnSpikedClub"/>
+		<item name="meleeWpnGrapheneSledgehammerTM"/>
+	</append>
+
+	<!-- ARMORS LOOT -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupArmorT2']">
+		<item name="armorGrapheneHelmetTM"/>
+		<item name="armorGrapheneChestTM"/>
+		<item name="armorGrapheneGlovesTM"/>
+		<item name="armorGrapheneLegsTM"/>
+		<item name="armorGrapheneBootsTM"/>
+		<item name="armorClothHatGrapheneTM"/>
+		<item name="armorClothJacketGrapheneTM"/>
+		<item name="armorClothGlovesGrapheneTM"/>
+		<item name="armorClothPantsGrapheneTM"/>
+		<item name="armorClothBootsGrapheneTM"/>
+	</append>
+
+
+	<!-- *** TRADER QUEST REWARDS -->
+	
+
+	<!-- INCLUDES SPIKEDCLUB AND GRAPHENE SLEDGEHAMMER INTO QUEST REWARDS -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT2']">
+		<item name="meleeWpnSpikedClub"/>
+		<item name="meleeWpnGrapheneSledgehammerTM"/>
+	</append>
+
+
+	<!-- INCLUDES MEGA BREAKER AND MEGA CUTTER INTO QUEST REWARDS -->
+	<!-- INCLUDES MEGA TONGOMOD TOOLS INTO QUEST REWARDS -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestToolsT1']">
+		<item name="meleeToolMegaBreakerTM"/>
+		<item name="meleeWpnMegaCutterTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestToolsT2']">
+		<item name="meleeToolMegaBreakerTM"/>
+		<item name="meleeWpnMegaCutterTM"/>
+		<item name="meleeToolRepairMegaNailgunTM"/>
+		<item name="meleeToolSalvageMegaImpactDriverTM"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestToolsT3']">
+		<item name="meleeToolRepairMegaNailgunTM"/>
+		<item name="meleeToolSalvageMegaImpactDriverTM"/>
+		<item name="meleeToolMegaAugerTM"/>
+		<item name="meleeToolMegaChainsawTM"/>
+	</append>
+
+	<!-- XXX -->
+
+	<!-- INCLUDES GRAPHENE ARMORS INTO QUEST REWARDS -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestArmorT2']">
+		<item name="armorGrapheneHelmetTM"/>
+		<item name="armorGrapheneChestTM"/>
+		<item name="armorGrapheneGlovesTM"/>
+		<item name="armorGrapheneLegsTM"/>
+		<item name="armorGrapheneBootsTM"/>
+		<item name="armorClothHatGrapheneTM"/>
+		<item name="armorClothJacketGrapheneTM"/>
+		<item name="armorClothGlovesGrapheneTM"/>
+		<item name="armorClothPantsGrapheneTM"/>
+		<item name="armorClothBootsGrapheneTM"/>
+	</append>
+	
+	<!-- XXX -->
+
+	<!-- NEW GROUPS FOR TONGOMOD QUESTS-->
+
+	<append xpath="/lootcontainers">
+
+
+		<!-- FALMER CLASS BOX -->
+		<lootgroup name="groupQuestRewardFarmerMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY FARMER CLASS -->
+			<item name="resourceTurd" count="1,5"/>
+			<item name="foodRottingFlesh" count="2,10"/>
+			<item name="foodCropMushrooms" count="2,10"/>
+			<item name="foodCropBlueberries" count="2,10"/>
+			<item name="resourceCropCoffeeBeans" count="2,10"/>
+			<item name="resourceCropAloeLeaf" count="2,10"/>
+			<item name="foodCropPotato" count="2,10"/>
+			<item name="foodCropCorn" count="2,10"/>
+			<item name="foodCropPumpkin" count="2,10"/>
+			<item name="foodCropYuccaFruit" count="2,10"/>
+			<item name="resourceCropHopsFlower" count="2,10"/>
+			<item name="resourceCropCoffeeBeans" count="2,10"/>
+			<item name="resourceCropChrysanthemumPlant" count="2,10"/>
+			<item name="resourceCropGoldenrodPlant" count="2,10"/>
+			<item name="resourceCropCottonPlant" count="2,10"/>
+			<item name="foodCropGraceCorn" count="1,2"/>
+
+			<item name="itemToolDonQuixote" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardFarmerMagazines" count="all">
+			<item group="groupQuestRewardFarmerMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardFarmerMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardFarmerMagazines"/>
+		</lootcontainer>
+
+
+		<!-- CHEF CLASS BOX -->
+		<lootgroup name="groupQuestRewardChefMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY CHEF CLASS -->
+			<item name="foodSkillMagazine" count="2,4"/>
+			<item name="drinkRomulanBeerTM" count="1,2"/>
+			<item name="foodSteakPotatoTM" count="1,2"/>
+			<item name="drinkJarBoiledWater" count="1,5"/>
+			<item name="foodCropMushrooms" count="2,10"/>
+			<item name="foodCropBlueberries" count="2,10"/>
+			<item name="foodRawMeat" count="1,5"/>
+			<item name="cntShippingCrateShamway" count="1"/>
+
+			<item name="itemToolDonQuixote" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardChefMagazines" count="all">
+			<item group="groupQuestRewardChefMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardChefMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardChefMagazines"/>
+		</lootcontainer>
+
+
+		<!-- caja recompena clase medic y ciencia -->
+		<lootgroup name="groupQuestRewardMedicMagazines01" count="2" >
+			<!-- todas las clases -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- especifico por clase -->
+			<item name="medicalSkillMagazine" count="2,4"/>
+			<item name="medicalFirstAidBandage" count="2,5"/>
+			<item name="medicalFirstAidKit" count="1,2"/>
+			<item name="medicalPlasterCast" count="1,2"/>
+			<item name="drugSteroids" count="1,2"/>
+			<item name="drugPainkillers" count="1,2"/>
+			<item name="drugVitamins" count="1,2"/>
+			<item name="cntShippingCrateLabEquipment" count="1"/>
+
+			<item name="itemToolKryptonite" count="1"/>
+			<item name="itemToolFluxCapacitor" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardMedicMagazines" count="all">
+			<item group="groupQuestRewardMedicMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardMedicMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardMedicMagazines"/>
+		</lootcontainer>
+		
+
+		<!-- HUNTER CLASS BOX -->
+		<lootgroup name="groupQuestRewardHunterMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY HUNTER CLASS -->
+			<item name="resourceCloth" count="20,50"/>
+			<item name="resourceLeather" count="2,10"/>
+			<item name="resourceSewingKit" count="1,5"/>
+			<item name="bowsSkillMagazine" count="2,4"/>
+			<item name="bladesSkillMagazine" count="2,4"/>
+			<item name="riflesSkillMagazine" count="2,4"/>
+			<item name="armorSkillMagazine" count="2,4"/>
+			<item name="workstationSkillMagazine" count="2,4"/>
+			<item name="cntShippingCrateSavageCountry" count="1"/>
+
+			<item name="itemToolLonginusSpear" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardHunterMagazines" count="all">
+			<item group="groupQuestRewardHunterMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardHunterMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardHunterMagazines"/>
+		</lootcontainer>
+
+
+		<!-- BUILDER CLASS BOX -->
+		<lootgroup name="groupQuestRewardConstructorMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY BUILDER CLASS -->
+			<item name="harvestingToolsSkillMagazine" count="2,4"/>
+			<item name="repairToolsSkillMagazine" count="2,4"/>
+			<item name="workstationSkillMagazine" count="2,4"/>
+			<item name="explosivesSkillMagazine" count="2,4"/>
+			<item name="resourceCobblestones" count="100,500"/>
+			<item name="resourceConcreteMix" count="50,100"/>
+			<item name="resourceForgedIron" count="10,20"/>
+			<item name="resourceForgedSteel" count="2,10"/>
+			<item name="resourceGrapheneTM" count="1,5"/>
+			<item name="cntShippingCrateWorkingStiffs" count="1"/>
+
+			<item name="itemToolSonicScrewdiver" count="1"/>
+			<item name="itemToolLonginusSpear" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardConstructorMagazines" count="all">
+			<item group="groupQuestRewardConstructorMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardConstructorMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardConstructorMagazines"/>
+		</lootcontainer>
+
+
+		<!-- MECHANIC CLASS BOX -->
+		<lootgroup name="groupQuestRewardMechanicMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY MECHANIC CLASS -->
+			<item name="salvageToolsSkillMagazine" count="2,4"/>
+			<item name="workstationSkillMagazine" count="2,4"/>
+			<item name="vehiclesSkillMagazine" count="2,4"/>
+			<item name="electricianSkillMagazine" count="2,4"/>
+			<item name="trapsSkillMagazine" count="2,4"/>
+			<item name="resourceDuctTape" count="2,10"/>
+			<item name="resourceGlue" count="2,10"/>
+			<item name="resourceRepairKit" count="2,10"/>
+			<item name="resourceMechanicalParts" count="10,20"/>
+			<item name="resourceElectricParts" count="10,20"/>
+			<item name="resourceSpring" count="10,20"/>
+			<item name="cntShippingCrateCarParts" count="1"/>
+			<item name="cntShippingCrateMoPowerElectronics" count="1"/>
+
+			<item name="itemToolSonicScrewdiver" count="1"/>
+			<item name="itemToolLonginusSpear" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardMechanicMagazines" count="all">
+			<item group="groupQuestRewardMechanicMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardMechanicMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardMechanicMagazines"/>
+		</lootcontainer>
+
+
+		<!-- SOLDIER BOX CLASS -->
+		<lootgroup name="groupQuestRewardSoldierMagazines01" count="2" >
+			<!-- ALL CLASS -->
+			<item name="foodCandy7DaysTM" count="1,2"/>
+			<item name="drinkJarYuccaClassicTM" count="1,2"/>
+			<item name="resourceBluePaper" count="1,5"/>
+			<item name="drinkJarRiverWater" count="2,5"/>
+			<item name="foodHoney" count="1"/>
+
+			<!-- ONLY SOLDIER CLASS -->
+			<item name="bowsSkillMagazine" count="2,4"/>
+			<item name="spearsSkillMagazine" count="2,4"/>
+			<item name="clubsSkillMagazine" count="2,4"/>
+			<item name="sledgehammersSkillMagazine" count="2,4"/>
+			<item name="knucklesSkillMagazine" count="2,4"/>
+			<item name="bladesSkillMagazine" count="2,4"/>
+			<item name="handgunsSkillMagazine" count="2,4"/>
+			<item name="shotgunsSkillMagazine" count="2,4"/>
+			<item name="riflesSkillMagazine" count="2,4"/>
+			<item name="machineGunsSkillMagazine" count="2,4"/>
+			<item name="explosivesSkillMagazine" count="2,4"/>
+			<item name="armorSkillMagazine" count="2,4"/>
+			<item name="roboticsSkillMagazine" count="2,4"/>
+			<item name="ammoBundle9mmBulletBall" count="1"/>
+			<item name="ammoBundle44MagnumBulletBall" count="1"/>
+			<item name="ammoBundle762mmBulletBall" count="1"/>
+			<item name="ammoBundleShotgunShell" count="1"/>
+			<item name="ammoBundleArrowIron" count="1"/>
+			<item name="ammoBundleCrossbowBoltIron" count="1"/>
+			<item name="questRewardAmmoCraftingBundle" count="1"/>
+			<item name="cntShippingCrateBookstore" count="1"/>
+			<item name="cntShippingCrateShotgunMessiah" count="1"/>
+			<item name="cntShippingCrateHero" count="1"/>
+
+			<item name="itemToolLonginusSpear" count="1"/>
+			<item name="itemToolSonicScrewdiver" count="1"/>
+			<item name="itemToolKryptonite" count="1"/>
+			<item name="itemToolFluxCapacitor" count="1"/>
+			<item name="itemToolDonQuixote" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestRewardSoldierMagazines" count="all">
+			<item group="groupQuestRewardSoldierMagazines01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questRewardSoldierMagazines" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestRewardSoldierMagazines"/>
+		</lootcontainer>
+
+
+		<!-- 10 ENGINE BOX -->
+		<lootgroup name="groupQuestEngineBoxTM01" count="10" >
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+			<item name="smallEngine" count="1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestEngineBoxTM" count="all">
+			<item group="groupQuestEngineBoxTM01" />
+		</lootgroup>
+
+		<!-- Quest Reward Bundle -->
+		<lootcontainer name="questEngineBoxTM" count="1" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" unique_item="true" ignore_loot_abundance="true">
+			<item group="groupQuestEngineBoxTM"/>
+		</lootcontainer>
+		
+
+	</append>
+
+	<!-- XXX -->
+
+</raiz>
