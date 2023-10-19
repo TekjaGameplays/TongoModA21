@@ -1,0 +1,15 @@
+<raiz>
+
+
+
+	<!-- REMOVE ORIGINAL BIRDNEST CONTAINER -->
+	<remove xpath="/lootcontainers/lootcontainer[@name='birdNest']"/>
+
+	<!-- NEW BIRDNEST CONTAINER -->
+	<append xpath="/lootcontainers">
+		<lootcontainer name="birdNest" count="1" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item group="groupBirdNest"/>
+		</lootcontainer>
+	</append>
+	
+</raiz>

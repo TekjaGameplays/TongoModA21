@@ -1,0 +1,18 @@
+<raiz>
+
+	<!-- NO HEAT ON MACHINES (WITHOUT USE FUEL) -->
+
+	<remove xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapStrength']"/>
+	<remove xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapTime']"/>
+	<remove xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapFrequency']"/>
+
+	<remove xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']"/>
+	<remove xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']"/>
+	<remove xpath="/blocks/block[@name='workbench']/property[@name='HeatMapFrequency']"/>
+
+	<remove xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']"/>
+	<remove xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']"/>
+	<remove xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapFrequency']"/>
+
+	
+</raiz>

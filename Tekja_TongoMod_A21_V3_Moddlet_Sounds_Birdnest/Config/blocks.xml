@@ -1,0 +1,6 @@
+<raiz>
+
+	<!-- ADD WOOD SOUND FOR DESTROY BIRDNEST -->
+	<set xpath="blocks/block[@name='cntBirdnest']/property[@name='DestroyFX']/@value">blockdestroy_plant,wooddestroy</set>
+	
+</raiz>

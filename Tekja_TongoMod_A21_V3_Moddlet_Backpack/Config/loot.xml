@@ -1,0 +1,8 @@
+<raiz>
+
+	<!-- EXTENDED BACKPACK FROM PLAYER DIE WITH NEW TONGOMOD BACKPACK -->
+	<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">8,11</set>
+
+	
+
+</raiz>
