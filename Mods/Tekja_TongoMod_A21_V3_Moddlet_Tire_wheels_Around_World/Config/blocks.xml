@@ -1,0 +1,58 @@
+<raiz>
+
+	
+
+	<append xpath="/blocks">
+
+		<!-- NEW TIRE TO GET WHEEL AFTER DESTROY (FROM LEGACY VERSION) -->
+
+		<block name="decoCarTireSmallFlat">
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="Weight" value="16"/>
+			<property name="Model" value="Entities/OutdoorDecor/tire02Prefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="4,16" tag="oreWoodHarvest"/> <!-- 2,8 -->
+			<drop event="Destroy" name="vehicleWheels" count="1" prob="0.10" tag="oreWoodHarvest"/> <!-- 0.10 <> 0.03 -->
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+
+		<!-- NOT_A_SHAPE -->
+		<block name="decoCarTireFlat">
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_tirePrefab.prefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="6,20" tag="oreWoodHarvest"/> <!-- 3,10 -->
+			<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/> <!-- 0.20 <> 0.05 -->
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+
+		<!-- NOT_A_SHAPE -->
+		<block name="decoCarTirePile">
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/tire_pilePrefab.prefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value=".5,.5,0"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="sight,melee,bullet,arrow,rocket,movement"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="16,40" tag="oreWoodHarvest"/> <!-- 8,20 -->
+			<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/> <!-- 0.30 <> 0.10 -->
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+
+		<!-- NOT_A_SHAPE -->
+		<block name="decoCarWheelFlat">
+			<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="6,20" tag="oreWoodHarvest"/> <!-- 3,10 -->
+			<drop event="Destroy" name="vehicleWheels" count="1" prob="0.15" tag="oreWoodHarvest"/> <!-- 0.20 <> 0.05 -->
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+
+	</append>
+	
+</raiz>
