@@ -1,0 +1,50 @@
+<raiz>
+
+
+	<!-- REMOVE VANILLA FOOD AND WATER BARS -->
+	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@stat_type='Food']" />
+	<remove xpath="/windows/window[@name='windowToolbelt']/rect/rect[@stat_type='Water']" />
+	
+
+	<!-- NEW FOOD AND WATER BARS IN HUD -->
+	<append xpath="/windows/window[@name='HUDLeftStatBars']">
+		<rect name="foodWater" pos="184,156" rows="2" cols="1" side="right">
+
+			<!-- FOOD -->
+			<rect width="100" height="46" pos="0,-50" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="98" type="filled" fill="{statmodifiedmax}" />
+
+				<filledsprite depth="5" pos="1,0" width="98" name="BarContent" color="0,128,90,170" type="filled" fill="0" globalopacity="false" />
+				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_hunger" size="35,35" pos="32,-5" foregroundlayer="true" />
+				
+				<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+				<filledsprite depth="8" name="background" color="0,0,0,255" width="100" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				<filledsprite depth="3" name="background" color="0,0,0,255" width="99" fillcenter="false" type="filled" fill="{statmodifiedmax}" />			
+			</rect>
+
+			<!-- WATER -->
+			<rect width="100" height="46" pos="0,-100" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+				<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+
+				<filledsprite depth="3" name="background" color="110,110,110,128" width="98" type="filled" fill="{statmodifiedmax}" />
+				
+				<filledsprite depth="5" pos="1,0" width="98" name="BarContent" color="0,94,246,170" type="filled" fill="0" globalopacity="false" />
+				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water" size="35,35" pos="32,-5" foregroundlayer="true" />
+				
+				<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+				<filledsprite depth="8" name="background" color="0,0,0,255" width="100" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				<filledsprite depth="3" name="background" color="0,0,0,255" width="99" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+			</rect>
+
+
+		</rect>
+	</append>
+
+	
+	
+
+</raiz>
