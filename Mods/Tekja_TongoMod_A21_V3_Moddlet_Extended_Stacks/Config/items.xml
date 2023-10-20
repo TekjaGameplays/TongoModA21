@@ -1,0 +1,22 @@
+<raiz>
+	
+
+	<!-- *** EXTENDED STACKS ITEMS *** -->
+
+	<set xpath="/items/item[starts-with(@name,'thrown')]/property[@name='Stacknumber']/@value">100</set>
+	
+	<set xpath="/items/item[starts-with(@name,'food')]/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[starts-with(@name,'drink')]/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[starts-with(@name,'drug')]/property[@name='Stacknumber']/@value">500</set>
+	<set xpath="/items/item[starts-with(@name,'medical')]/property[@name='Stacknumber']/@value">500</set>
+	
+	<set xpath="/items/item[starts-with(@name,'ammo')]/property[@name='Stacknumber']/@value">1000</set>
+
+	<set xpath="/items/item[starts-with(@name,'resource')]/property[@name='Stacknumber']/@value">10000</set>
+
+	<set xpath="/items/item[@name='oldCash']/property[@name='Stacknumber']/@value">50000</set>
+	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">50000</set>
+	<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">50000</set>
+	
+
+</raiz>
