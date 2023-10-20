@@ -1,0 +1,170 @@
+<raiz>
+
+
+	<!-- MODIFIED FARMING -->
+
+	<remove xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedHop3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']"/>
+	<remove xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']"/>
+
+
+	<append xpath="/blocks">
+
+		<!-- SEEDS A19 VERSION -->
+
+		<block name="plantedMushroom3HarvestPlayer">
+			<property name="Extends" value="plantedMushroom3Harvest"/>
+			<property name="DescriptionKey" value="plantedMushroom3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedMushroom3Harvest"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropMushrooms" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropMushrooms" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedMushroom1"/>
+			<drop event="Destroy" name="plantedMushroom1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedYucca3HarvestPlayer">
+			<property name="Extends" value="plantedYucca3Harvest"/>
+			<property name="DescriptionKey" value="plantedYucca3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedYucca1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropYuccaFruit" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropYuccaFruit" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedYucca1"/>
+			<drop event="Destroy" name="plantedYucca1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedCotton3HarvestPlayer">
+			<property name="Extends" value="plantedCotton3Harvest"/>
+			<property name="DescriptionKey" value="plantedCotton3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedCotton1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropCottonPlant" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropCottonPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedCotton1"/>
+			<drop event="Destroy" name="plantedCotton1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedCoffee3HarvestPlayer">
+			<property name="Extends" value="plantedCoffee3Harvest"/>
+			<property name="DescriptionKey" value="plantedCoffee3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedCoffee1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropCoffeeBeans" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropCoffeeBeans" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedCoffee1"/>
+			<drop event="Destroy" name="plantedCoffee1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedGoldenrod3HarvestPlayer">
+			<property name="Extends" value="plantedGoldenrod3Harvest"/>
+			<property name="DescriptionKey" value="plantedGoldenrod3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedGoldenrod3HarvestPlayer"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropGoldenrodPlant" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropGoldenrodPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedGoldenrod1"/>
+			<drop event="Destroy" name="plantedGoldenrod1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedAloe3HarvestPlayer">
+			<property name="Extends" value="plantedAloe3Harvest"/>
+			<property name="DescriptionKey" value="plantedAloe3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedAloe1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropAloeLeaf" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropAloeLeaf" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedAloe1"/>
+			<drop event="Destroy" name="plantedAloe1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedBlueberry3HarvestPlayer">
+			<property name="Extends" value="plantedBlueberry3Harvest"/>
+			<property name="DescriptionKey" value="plantedBlueberry3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedBlueberry1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropBlueberries" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropBlueberries" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedBlueberry1"/>
+			<drop event="Destroy" name="plantedBlueberry1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedPotato3HarvestPlayer">
+			<property name="Extends" value="plantedPotato3Harvest"/>
+			<property name="DescriptionKey" value="plantedPotato3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropPotato" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropPotato" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedPotato1"/>
+			<drop event="Destroy" name="plantedPotato1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedChrysanthemum3HarvestPlayer">
+			<property name="Extends" value="plantedChrysanthemum3Harvest"/>
+			<property name="DescriptionKey" value="plantedChrysanthemum3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedChrysanthemum1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropChrysanthemumPlant" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropChrysanthemumPlant" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedChrysanthemum1"/>
+			<drop event="Destroy" name="plantedChrysanthemum1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedCorn3HarvestPlayer">
+			<property name="Extends" value="plantedCorn3Harvest"/>
+			<property name="DescriptionKey" value="plantedCorn3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropCorn" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropCorn" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedCorn1"/>
+			<drop event="Destroy" name="plantedCorn1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedGraceCorn3HarvestPlayer">
+			<property name="Extends" value="plantedGraceCorn3Harvest"/>
+			<property name="DescriptionKey" value="plantedGraceCorn3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropGraceCorn" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropGraceCorn" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedGraceCorn1"/>
+			<drop event="Destroy" name="plantedGraceCorn1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedHop3HarvestPlayer">
+			<property name="Extends" value="plantedHop3Harvest"/>
+			<property name="DescriptionKey" value="plantedHop3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedHop1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="resourceCropHopsFlower" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropHopsFlower" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedHop1"/>
+			<drop event="Destroy" name="plantedHop1" count="1" prob="0.0"/>
+		</block>
+
+		<block name="plantedPumpkin3HarvestPlayer">
+			<property name="Extends" value="plantedPumpkin3Harvest"/>
+			<property name="DescriptionKey" value="plantedPumpkin3HarvestDesc"/>
+			<property name="CustomIcon" value="plantedPumpkin1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropPumpkin" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropPumpkin" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="DowngradeBlock" value="plantedPumpkin1"/>
+			<drop event="Destroy" name="plantedPumpkin1" count="1" prob="0.0"/>
+		</block>
+
+	</append>
+	
+</raiz>
