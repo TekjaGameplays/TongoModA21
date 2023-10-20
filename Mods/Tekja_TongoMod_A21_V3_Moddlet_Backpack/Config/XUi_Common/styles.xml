@@ -1,0 +1,20 @@
+<raiz>
+	<!-- NEW STYLE FROM TONGOMOD BACKPACK -->
+	<append xpath="/styles">	
+		<style name="tongomod_backpack_style">
+			<style_entry name="select_color" value="[beige]"/>
+			<style_entry name="press_color" value="[limeGreen]"/>
+			<style_entry name="final_pressed_color" value="[lightGrey]"/>
+			<style_entry name="background_color" value="[mediumGrey]"/>
+			<style_entry name="highlight_color" value="[hoverColor]"/>
+			<style_entry name="holding_color" value="[white]"/>
+			<style_entry name="width" value="40"/>
+			<style_entry name="height" value="40"/>
+			<style_entry name="hover_icon_grow" value="1.0"/>
+			<style_entry name="on_press" value="true"/>
+			<style_entry name="sound_volume" value="0.70"/>
+			<style_entry name="pickup_sound" value="[pickup_click]"/>
+			<style_entry name="place_sound" value="[place_click]"/>
+		</style>
+	</append>
+</raiz>
