@@ -1,0 +1,8 @@
+<raiz>
+
+	<!-- TARGET BAR VISIBILITY ALWAYS -->
+
+	<set xpath="/windows/window[@name='windowTargetBar']/@visibility">always</set>
+	
+
+</raiz>
