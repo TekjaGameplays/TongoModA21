@@ -1,5 +1,0 @@
-<raiz>
-
-	<set xpath="/items/item[@name='vehicleWheels']/property[@name='EconomicValue']/@value">,1000</set> 
-	
-</raiz>
