@@ -1,0 +1,8 @@
+<raiz>
+	<ModInfo>
+		<Name value="TongoMod_Moddlet_Camera_exit_vehicle"/>
+		<Description value="Change camera to exit vehicles (Bicycle,Minibike,Motorcycle)"/>
+		<Author value="Tekja"/>
+		<Version value="3.0"/>
+	</ModInfo>
+</raiz>
