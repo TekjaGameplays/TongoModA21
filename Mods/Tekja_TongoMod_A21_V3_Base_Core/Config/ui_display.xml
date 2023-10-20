@@ -1,0 +1,117 @@
+<raiz>
+
+
+	<!-- LAYERS CRAFTING FROM NEW MACHINES-->
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+
+		<crafting_category_list display_type="workingMakina">
+			<!-- NOTHING -->
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingLibros">			
+			<crafting_category name="LibrosT0" icon="ui_game_symbol_book" display_name="lblLibrosT0WorkingLibros" />
+			<crafting_category name="LibrosT1" icon="ui_game_symbol_book" display_name="lblLibrosT1WorkingLibros" />
+			<crafting_category name="LibrosT2" icon="ui_game_symbol_book" display_name="lblLibrosT2WorkingLibros" />
+			<crafting_category name="MagazinesTX" icon="ui_game_symbol_hammer" display_name="lblMgazinesTXWorkingLibros" />
+			<crafting_category name="ModsT1" icon="ui_game_symbol_assemble" display_name="lblModsT1WorkingLibros" />
+			<crafting_category name="ModsT2" icon="ui_game_symbol_assemble" display_name="lblModsT2WorkingLibros" />
+			<crafting_category name="ModsT3" icon="ui_game_symbol_assemble" display_name="lblModsT3WorkingLibros" />
+			
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingDysmantle">
+			<crafting_category name="Herramientas" icon="ui_game_symbol_tool" display_name="lblHerramientasDysmantle" />
+			<crafting_category name="Armas" icon="ui_game_symbol_club" display_name="lblArmasDysmantle" />
+			<crafting_category name="Armaduras" icon="ui_game_symbol_shirt" display_name="lblArmadurasDysmantle" />
+			<crafting_category name="Muni" icon="ui_game_symbol_knife" display_name="lblMuniDysmantle" />
+			<crafting_category name="Partes" icon="ui_game_symbol_hammer" display_name="lblPartsDysmantle" />
+			<crafting_category name="Moddet" icon="ui_game_symbol_assemble" display_name="lblModdetDysmantle" />
+			<crafting_category name="Quimics" icon="ui_game_symbol_science" display_name="lblChemistryDysmantle" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingSemillas">
+			<crafting_category name="Semilla" icon="ui_game_symbol_hand" display_name="lblSemillaMK_Semillas" />
+			<crafting_category name="KK_Compost" icon="ui_game_symbol_dysentery" display_name="lblKK_CompostMK_semillas" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingAutominerT0">
+			<!-- NOTHING -->
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingOven">
+			<crafting_category name="Ncanfood" icon="ui_game_symbol_fork" display_name="lblNcanfoodOven" />
+			<crafting_category name="Ycanfood" icon="ui_game_symbol_campfire" display_name="lblYcanfoodOven" />
+			<crafting_category name="Ocan" icon="ui_game_symbol_scrap" display_name="lblOcanOven" />
+
+			<crafting_category name="Oaqua" icon="ui_game_symbol_beer" display_name="lblOaquaOven" />
+			<crafting_category name="Ochem" icon="ui_game_symbol_chemistry" display_name="lblOchemOven" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingOchemi">		
+			<crafting_category name="OchemiMedic" icon="ui_game_symbol_medical" display_name="lblOchemiMedical" />
+			<crafting_category name="OchemiSnack" icon="ui_game_symbol_drunk" display_name="lblOsnackOven" />
+			<crafting_category name="OchemiSci" icon="ui_game_symbol_science" display_name="lblOchemiQuimics" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="workingAutominerADV">
+			<!-- NOTHING -->
+		</crafting_category_list>
+		
+	</append>
+
+
+	<append xpath="/ui_display_info/item_display">
+
+		<item_display_info display_type="waterYuccaClassicTM" display_group="groupConsumables">
+			<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+			<display_entry name="dStaminaRegen" title_key="statStaminaRegen" display_type="Percent"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+		<!-- UI melee (Mega Impact Driver)-(Mega Atornilladora) -->
+		<item_display_info display_type="meleeTM" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkFlurryOfBlows,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+		</item_display_info>
+
+		<!-- UI (Spike Club)-(Lucero del Alba) -->
+		<item_display_info display_type="meleeLightTM" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+		</item_display_info>
+
+		<!-- UI (Graphene Sledgehammer)-(Mazo Grafeno) -->
+		<item_display_info display_type="meleeHeavyTM" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statPowerAttack" tags="secondary,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="dEntityDamageSneak" title_key="statEntityDamageSneak" display_type="Bool"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMiner69r,perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="StaminaLoss" display_type="Decimal1" title_key="statStaminaLoss" negative_preferred="true"/>
+			<display_entry name="AttacksPerMinute" title_key="statAttacksPerMinute" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkTiolavara,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+		</item_display_info>
+
+		<!-- UI (Graphene Tools)-(Herramientas Grafeno) -->
+		<item_display_info display_type="motorToolTM" display_group="groupMelee">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageMelee" tags="perkMasterTool,perkMiner69r"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkMasterToolTM,perkMiner69r"/>
+			<display_entry name="MagazineSize" title_key="statFuelCapacity" tags="perkMasterTool,perkMiner69r"/>
+			<display_entry name="RoundsPerMinute" title_key="statAttacksPerMinute" tags="perkMasterTool,perkMiner69r"/>
+			<display_entry name="DegradationMax" title_key="statDegradationMax" tags="perkMasterTool,perkMiner69r,admin"/>
+		</item_display_info>
+
+	</append>
+	
+	
+	
+
+</raiz>
