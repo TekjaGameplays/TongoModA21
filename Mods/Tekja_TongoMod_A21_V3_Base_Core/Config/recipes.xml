@@ -110,7 +110,7 @@
 		</recipe>
 
 		
-		<!-- VANILLA BACKPACK RECIPES -->
+		<!-- BACKPACK RECIPES -->
 		
 		<recipe name="foodTunaBreadTM" count="1" craft_time="10" tags="learnable,perkMasterChef" >
 			<ingredient name="foodCanTuna" count="1"/>
@@ -127,7 +127,7 @@
 			<ingredient name="resourceWood" count="5"/>
 		</recipe>
 
-		<recipe name="drinkJarRiverWater" count="10" craft_time="5"  tags="perkMasterChef">
+		<recipe name="drinkJarRiverWater" count="20" craft_time="5"  tags="perkMasterChef">
 			<ingredient name="bucketRiverWater" count="1"/>
 			<ingredient name="resourceScrapPolymers" count="50"/>
 		</recipe>
@@ -2285,7 +2285,7 @@
 			<ingredient name="drinkJarRiverWater" count="1"/>
 		</recipe>
 
-		<recipe name="drinkJarRiverWater" count="1" craft_time="60" craft_area="MKOven" tags="oven" craft_tool="toolCookingPot">
+		<recipe name="drinkJarRiverWater" count="1" craft_time="5" craft_area="MKOven" tags="oven" craft_tool="toolCookingPot">
 			<ingredient name="resourceSnowBall" count="10"/>
 			<ingredient name="resourceScrapPolymers" count="5"/>
 		</recipe>
@@ -2560,67 +2560,67 @@
 
 		<!-- AUGER -->
 
-		<recipe name="resourceClayLump" count="2000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceClayLump" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceCrushedSand" count="2000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceCrushedSand" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceCoal" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceCoal" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceScrapIron" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceScrapIron" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceScrapLead" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceScrapLead" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceRockSmall" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceRockSmall" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourcePotassiumNitratePowder" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourcePotassiumNitratePowder" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceOilShale" count="1000" craft_time="3600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceOilShale" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceScrapBrass" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceScrapBrass" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
 		<recipe name="resourceSilverNugget" count="5" craft_time="1800" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
@@ -2644,27 +2644,35 @@
 			</effect_group>
 		</recipe>
 
-		<recipe name="resourceGraphite" count="1000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
-			<ingredient name="ammoGasCan" count="2000"/>
+		<recipe name="resourceGraphite" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<!--<ingredient name="ammoGasCan" count="2000"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
+			</effect_group>-->
+		</recipe>
+
+		<recipe name="bucketRiverWater" count="10" craft_time="100" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolPickT3Auger">
+			<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
 			</effect_group>
 		</recipe>
 
+	
 		<!-- CHAINSAW -->
 
-		<recipe name="resourceYuccaFibers" count="2000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolAxeT3Chainsaw">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceYuccaFibers" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolAxeT3Chainsaw">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
-		<recipe name="resourceWood" count="2000" craft_time="600" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolAxeT3Chainsaw">
-			<ingredient name="ammoGasCan" count="1000"/>
+		<recipe name="resourceWood" count="1000" craft_time="0" craft_area="MKAutoMinerADV" tags="autoMinerADV,perkMasterTool" craft_tool="meleeToolAxeT3Chainsaw">
+			<!--<ingredient name="ammoGasCan" count="1000"/>
 			<effect_group>
 				<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="ammoGasCan"/>
-			</effect_group>
+			</effect_group>-->
 		</recipe>
 
 

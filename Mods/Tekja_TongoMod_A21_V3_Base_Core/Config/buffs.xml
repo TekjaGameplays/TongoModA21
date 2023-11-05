@@ -1,6 +1,30 @@
 <raiz>
 
 
+
+	<append xpath="/buffs/buff[@name='buffDrugSteroids']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSteroidsDisplay" operation="set" value="@$buffDrugSteroidsDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffDrugSteroidsDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffDrugSteroids">
+				<requirement name="CVarCompare" cvar="$buffDrugSteroidsDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffDrugSteroidsDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffDrugSteroidsDuration" operation="set" value="0"/>
+		</effect_group>
+
+		<effect_group>
+			<passive_effect name="CarryCapacity" operation="base_set" value="100"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
+		</effect_group>
+	</append>
+	
+
 	<!-- CAT & DOG COMBINATED BUFF  -->
 
   <append xpath="/buffs">
@@ -93,9 +117,14 @@
 			  <passive_effect name="StaminaChangeOT" operation="perc_add" value="0.1">
 				  <requirement name="HasBuff" buff="buffHealWaterMax"/>
 			  </passive_effect>
-
-			  
 		  </effect_group>
+
+		  <effect_group>
+			  <requirement name="HoldingItemHasTags" tags="perkMasterTool"/>
+			  <passive_effect name="HarvestCount" operation="perc_add" value=".2" tags="oreWoodHarvest"/>
+			  <passive_effect name="PlayerExpGain" operation="perc_add" value="-.10" tags="Harvesting"/>
+		  </effect_group>
+		  
 	  </buff>
 
 	  <!-- *** buffRomulanBeerTM -->
@@ -201,6 +230,38 @@
 			  <requirement name="CVarCompare" cvar=".TiolavaraBonusRemove" operation="GT" value="0"/>
 			  <triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffPerkTiolavaraBonus"/>
 			  <triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveBuff" buff="buffPerkTiolavaraBonus"/>
+		  </effect_group>
+	  </buff>
+
+
+	  <!-- *** buffFoodCandy7DaysTM -->
+	  <!-- TRIGGERED_BY: Items = FoodCandy7DaysTM -->
+	  <!-- Jawbreakers got nuthin' on us! -->
+	  <!-- Increase the amount of wood, ore and stone that you harvest with mining tools. -->
+	  <buff name="buffFoodCandy7DaysTM" name_key="FoodCandy7DaysTM" description_key="FoodCandy7DaysTMDesc" icon="ui_game_symbol_candy_rock_busters">
+		  <stack_type value="replace"/>
+		  <duration value="0"/>
+		  <display_value value=".buffFoodCandy7DaysTMDisplay"/>
+		  <display_value_format value="time"/>
+
+		  <effect_group>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="subtract" value="@$MetabolismDuration"/>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffFoodCandy7DaysTMDisplay" operation="set" value="@$buffFoodCandy7DaysTMDuration"/>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffFoodCandy7DaysTMDisplay" operation="divide" value="@$MetabolismDuration"/>
+		  </effect_group>
+
+		  <effect_group>
+			  <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFoodCandy7DaysTM">
+				  <requirement name="CVarCompare" cvar="$buffFoodCandy7DaysTMDuration" operation="LTE" value="0"/>
+			  </triggered_effect>
+			  <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffFoodCandy7DaysTMDisplay" operation="set" value="0"/>
+			  <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="0"/>
+		  </effect_group>
+
+		  <effect_group>
+			  <requirement name="HoldingItemHasTags" tags="perkMasterTool"/>
+			  <passive_effect name="HarvestCount" operation="perc_add" value=".3" tags="oreWoodHarvest"/>
+			  <passive_effect name="PlayerExpGain" operation="perc_add" value="-.10" tags="Harvesting"/>
 		  </effect_group>
 	  </buff>
 
