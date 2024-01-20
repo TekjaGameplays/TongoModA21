@@ -16,9 +16,9 @@
 	<append xpath="/items/item[@name='ammoGasCan']/property[@name='Group']/@value">,OchemiSci</append>
 
 
-	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
-	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
-	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
+	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01Double,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
+	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01Double,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01Double,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceBricks,resourceGrapheneTM</set>
 
 	
 	<append xpath="/items/item[@name='toolBeaker']">
@@ -1268,8 +1268,20 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>-->
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="300">
+					<!--<requirement name="CVarCompare" cvar="$buffFoodCandy7DaysTMDuration" operation="GT" value="300"/>-->
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodCandy7DaysTM"/>
+				
 			</effect_group>
+
+
+			
+			
+			
 		</item>
 
 		

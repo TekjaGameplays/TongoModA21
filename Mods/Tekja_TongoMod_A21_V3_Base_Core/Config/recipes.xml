@@ -185,11 +185,11 @@
 		</recipe>
 
 		<recipe name="workingAutominerADV" count="1" craft_time="300" craft_area="MKDysmantle" tags="learnable,workingDysmantle">
-			<ingredient name="resourceForgedSteel" count="100000"/>
+			<ingredient name="resourceForgedSteel" count="50000"/>
 			<ingredient name="itemBigEngineTM" count="10"/>
 			<ingredient name="resourceAcid" count="200"/>
 			<ingredient name="resourceOil" count="1500"/>
-			<ingredient name="resourceGrapheneTM" count="100000"/> 
+			<ingredient name="resourceGrapheneTM" count="50000"/> 
 		</recipe>
 
 		<recipe name="workingDysmantle" count="1" craft_time="120" tags="learnable">
@@ -738,8 +738,8 @@
 			<ingredient name="ammoArrowStone" count="100"/>
 		</recipe>
 
-		<recipe name="ammoBoxArrowIronExtTM" count="100" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
-			<ingredient name="ammoArrowIron" count="1"/>
+		<recipe name="ammoBoxArrowIronExtTM" count="1" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
+			<ingredient name="ammoArrowIron" count="100"/>
 		</recipe>
 
 		<recipe name="ammoBoxArrowSteelAPExtTM" count="1" craft_time="10" craft_area="MKDysmantle" tags="workingDysmantle">
