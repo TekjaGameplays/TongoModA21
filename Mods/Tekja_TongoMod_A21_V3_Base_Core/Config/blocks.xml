@@ -21,6 +21,19 @@
 	<!-- CHANGED UNLOCKED FOR SEEDS -->
 	
 	<set xpath="blocks/block[@name='plantedAloe1']/property[@name='UnlockedBy']/@value">plantedAloe1Schematic</set>
+	<set xpath="blocks/block[@name='plantedBlueberry1']/property[@name='UnlockedBy']/@value">plantedBlueberry1Schematic</set>
+	<set xpath="blocks/block[@name='plantedChrysanthemum1']/property[@name='UnlockedBy']/@value">plantedChrysanthemum1Schematic</set>
+	<set xpath="blocks/block[@name='plantedCoffee1']/property[@name='UnlockedBy']/@value">plantedCoffee1Schematic</set>
+	<set xpath="blocks/block[@name='plantedCorn1']/property[@name='UnlockedBy']/@value">plantedCorn1Schematic</set>
+	<set xpath="blocks/block[@name='plantedCotton1']/property[@name='UnlockedBy']/@value">plantedCotton1Schematic</set>
+	<set xpath="blocks/block[@name='plantedGoldenrod1']/property[@name='UnlockedBy']/@value">plantedGoldenrod1Schematic</set>
+	<set xpath="blocks/block[@name='plantedHop1']/property[@name='UnlockedBy']/@value">plantedHop1Schematic</set>
+	<set xpath="blocks/block[@name='plantedMushroom1']/property[@name='UnlockedBy']/@value">plantedMushroom1Schematic</set>
+	<set xpath="blocks/block[@name='plantedPotato1']/property[@name='UnlockedBy']/@value">plantedPotato1Schematic</set>
+	<set xpath="blocks/block[@name='plantedYucca1']/property[@name='UnlockedBy']/@value">plantedYucca1Schematic</set>
+	<set xpath="blocks/block[@name='plantedPumpkin1']/property[@name='UnlockedBy']/@value">plantedPumpkin1Schematic</set>
+	<set xpath="blocks/block[@name='plantedGraceCorn1']/property[@name='UnlockedBy']/@value">plantedGraceCorn1Schematic</set>
+
 	
 	
 	<!-- UPGRADE GRAPHENE BLOCKS -->
