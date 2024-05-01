@@ -1,0 +1,116 @@
+<raiz>
+
+
+
+
+	<append xpath="/windows">
+
+		<!-- HUD LOGO -->
+		<window name="tongomodLogo" depth="99" pos="-200,-16" size="136,32">
+			<sprite name="tongomodLogo" depth="1" pos="0,0" size="136,32" atlas="ItemIconAtlas" sprite="TogoMod_Logo_21_3_3" pivot="center" />
+		</window>
+
+
+
+		<!-- ADAPTED WINDOWS AND TOOLS FOR NEW MACHINES -->
+
+		<window name="windowToolsAutoMinerT0" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+				required_tools="meleeToolRepairT0StoneAxe" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+
+		<window name="windowToolsLibros" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_book"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="1" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+				required_tools="itemToolDonQuixote" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+
+		<window name="windowToolsOven" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_cookware"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" required_tools="toolCookingPot,toolCookingGrill,toolBeaker" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+
+		<window name="windowToolsOchemi" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_chemistry"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" required_tools="toolBeaker,itemToolFluxCapacitor,itemToolKryptonite" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+
+		<window name="windowToolsAutoMinerADV" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_wrench"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+				required_tools="meleeToolAxeT3Chainsaw,meleeToolPickT3Auger" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+
+		<window name="windowToolsDysmantle" width="228" height="121" panel="Right" cursor_area="true" >
+			<panel style="header.panel">
+				<sprite style="header.icon" sprite="ui_game_symbol_book"/>
+				<label style="header.name" text="TOOLS" text_key="xuiTools" />
+			</panel>
+
+			<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true">
+
+				<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true"
+				required_tools="itemToolLonginusSpear,itemToolSonicScrewdiver" required_tools_only="true">
+					<item_stack controller="RequiredItemStack" name="0"/>
+				</grid>
+			</rect>
+		</window>
+
+	</append>
+
+
+	<!-- 84 locked inventory slots for TongoMod -->
+	<set xpath="//window[@name='windowBackpack']/panel[@name='header']/rect[@controller='ContainerStandardControls']/combobox[@name='cbxLockedSlots']/@value_max">84</set>
+
+</raiz>
