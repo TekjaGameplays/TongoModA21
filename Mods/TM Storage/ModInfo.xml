@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+	<Name value="TM_Storage" />
+	<DisplayName value="TM Storage" />
+	<Description value="TM Cajas de almacenamiento para TongoMod" />
+	<Author value="AlmaRon" />
+	<Version value="1.0.0" />
+	<Website value="" />
+</xml>
