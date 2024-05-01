@@ -1,0 +1,66 @@
+<configs>
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']">
+		
+		<item_modifier name="modTMHelmetLight" installable_tags="head" modifier_tags="misc,modTMHelmetLight" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modTMHelmetLightSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>			
+			<property name="CustomIcon" value="modTMHelmetLight"/>
+			<property name="DescriptionKey" value="modTMHelmetLightDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<!--<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>-->
+			<property name="LightValue" value="4"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHD" parentTransform="Spotlight" localPos="0,0,0" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHD" parentTransform="CameraNode" localPos="0,0,0" localRot="180,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightCam"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="@!.IsFPV"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMHelmetLightMed" installable_tags="head" modifier_tags="misc,modTMHelmetLightMed" blocked_tags="noMods,clothing" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="UnlockedBy" value="modTMHelmetLightMedSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>			
+			<property name="CustomIcon" value="modTMHelmetLightMed"/>
+			<property name="DescriptionKey" value="modTMHelmetLightMedDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<!--<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>-->
+			<property name="LightValue" value="4"/>
+			
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLight" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHDMed" parentTransform="Spotlight" localPos="0,0,0" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="HeadLightCam" prefab="#@modfolder:Resources/TMMods.unity3d?HelmetLightHDMed" parentTransform="CameraNode" localPos="0,0,0" localRot="180,0,0"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLight"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="HeadLightCam"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLight" active="@!.IsFPV"/>
+				<triggered_effect trigger="onSelfItemActivate" action="SetPartActive" part="HeadLightCam" active="@.IsFPV"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLight" active="false"/>
+				<triggered_effect trigger="onSelfItemDeactivate" action="SetPartActive" part="HeadLightCam" active="false"/>
+			</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modTMVehicleOffRoadHeadlightsHD" installable_tags="vlight" modifier_tags="light" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="UnlockedBy" value="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="CustomIcon" value="modTMVehicleOffRoadHeadlightsHD"/>
+			<property name="DescriptionKey" value="modTMVehicleOffRoadHeadlightsHDDesc"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Mods"/>
+			<effect_group tiered="false">
+				<passive_effect name="LightIntensity" operation="perc_set" value="3"/>
+			</effect_group>
+		</item_modifier>
+		
+	</insertAfter>
+</configs>

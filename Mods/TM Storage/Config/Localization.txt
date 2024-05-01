@@ -1,0 +1,126 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,spanish,Context
+
+TMStorageBox,,,,,"TM - Storage Box","TM - Caja de almacenamiento",,
+TMStorageBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMStorageBoxDescTip_title,,,,,"TM - Storage Box","TM - Caja de almacenamiento",,
+TMStorageBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMAmmoBox,,,,,"TM - Bullet Storage Box","TM - Caja de almacenamiento para balas",,
+TMAmmoBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMAmmoBoxDescTip_title,,,,,"TM - Bullet Storage Box","TM - Caja de almacenamiento para balas",,
+TMAmmoBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMBox,,,,,"TM - Storage box for the mod","TM - Caja de almacenamiento para el mod",,
+TMBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMBoxDescTip_title,,,,,"TM - Storage box for the mod","TM - Caja de almacenamiento para el mod",,
+TMBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMArmorBox,,,,,"TM - Armor Storage Box","TM - Caja de almacenamiento para armaduras",,
+TMArmorBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMArmorBoxDescTip_title,,,,,"TM - Armor Storage Box","TM - Caja de almacenamiento para armaduras",,
+TMArmorBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMFoodBox,,,,,"TM - Food storage box","TM - Caja de almacenamiento para comida",,
+TMFoodBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMFoodBoxDescTip_title,,,,,"TM - Food storage box","TM - Caja de almacenamiento para comida",,
+TMFoodBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMMedicalBox,,,,,"TM - Medicine storage box","TM - Caja de almacenamiento para medicina",,
+TMMedicalBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMMedicalBoxDescTip_title,,,,,"TM - Medicine storage box","TM - Caja de almacenamiento para medicina",,
+TMMedicalBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMWeaponBox,,,,,"TM - Weapon storage box","TM - Caja de almacenamiento para armas",,
+TMWeaponBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMWeaponBoxDescTip_title,,,,,"TM - Weapon storage box","TM - Caja de almacenamiento para armas",,
+TMWeaponBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMResourceBox,,,,,"TM - Resource storage Box","TM - Caja de almacenamiento para recursos",,
+TMResourceBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMResourceBoxDescTip_title,,,,,"TM - Resource storage Box","TM - Caja de almacenamiento para recursos",,
+TMResourceBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMVehicleBox,,,,,"TM - Vehicle storage box","TM - Caja de almacenamiento para vehiculos",,
+TMVehicleBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMVehicleBoxDescTip_title,,,,,"TM - Vehicle storage box","TM - Caja de almacenamiento para vehiculos",,
+TMVehicleBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMPartBox,,,,,"TM - Parts Storage box","TM - Caja de almacenamiento para partes",,
+TMPartBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMPartBoxDescTip_title,,,,,"TM - Parts Storage box","TM - Caja de almacenamiento para partes",,
+TMPartBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMModBox,,,,,"TM - Mods Storage box","TM - Caja de almacenamiento para mods",,
+TMModBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMModBoxDescTip_title,,,,,"TM - Mods Storage box","TM - Caja de almacenamiento para mods",,
+TMModBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMVendorBox,,,,,"TM - Storage box for items to sell","TM - Caja de almacenamiento para elementos para vender",,
+TMVendorBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMVendorBoxDescTip_title,,,,,"TM - Storage box for items to sell","TM - Caja de almacenamiento para elementos para vender",,
+TMVendorBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMConstructionBox,,,,,"TM - Storage box for construction materials","TM - Caja de almacenamiento para materiales de contrucción",,
+TMConstructionBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMConstructionBoxDescTip_title,,,,,"TM - Storage box for construction materials","TM - Caja de almacenamiento para materiales de contrucción",,
+TMConstructionBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMMagazineBox,,,,,"TM - Storage box for magazines and books","TM - Caja de almacenamiento para revistas y libros",,
+TMMagazineBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMMagazineBoxDescTip_title,,,,,"TM - Storage box for magazines and books","TM - Caja de almacenamiento para revistas y libros",,
+TMMagazineBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMCropBox,,,,,"TM - Storage box for growing elements","TM - Caja de almacenamiento para elementos de cultivo",,
+TMCropBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMCropBoxDescTip_title,,,,,"TM - Storage box for growing elements","TM - Caja de almacenamiento para elementos de cultivo",,
+TMCropBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMOtherBox,,,,,"TM - Storage box to store any item","TM - Caja de almacenamiento para guardar cualquier elemento",,
+TMOtherBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMOtherBoxDescTip_title,,,,,"TM - Storage box to store any item","TM - Caja de almacenamiento para guardar cualquier elemento",,
+TMOtherBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMToolBox,,,,,"TM - Storage box for storing tools","TM - Caja de almacenamiento para guardar herramientas",,
+TMToolBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMToolBoxDescTip_title,,,,,"TM - Storage box for storing tools","TM - Caja de almacenamiento para guardar herramientas",,
+TMToolBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMTrapBox,,,,,"TM - Storage box for storing traps","TM - Caja de almacenamiento para guardar trampas",,
+TMTrapBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMTrapBoxDescTip_title,,,,,"TM - Storage box for storing traps","TM - Caja de almacenamiento para guardar trampas",,
+TMTrapBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMElectricityBox,,,,,"TM - Storage box for storing electrical items","TM - Caja de almacenamiento para guardar elementos de electricidad",,
+TMElectricityBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMElectricityBoxDescTip_title,,,,,"TM - Storage box for storing electrical items","TM - Caja de almacenamiento para guardar elementos de electricidad",,
+TMElectricityBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMCementBox,,,,,"TM - Storage box for storing concrete mixer elements","TM - Caja de almacenamiento para guardar elementos de hormigonera",,
+TMCementBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMCementBoxDescTip_title,,,,,"TM - Storage box for storing concrete mixer elements","TM - Caja de almacenamiento para guardar elementos de hormigonera",,
+TMCementBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMChemistryBox,,,,,"TM - Storage box for storing chemistry elements","TM - Caja de almacenamiento para guardar elementos de quimica",,
+TMChemistryBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMChemistryBoxDescTip_title,,,,,"TM - Storage box for storing chemistry elements","TM - Caja de almacenamiento para guardar elementos de quimica",,
+TMChemistryBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMForgeBox,,,,,"TM - Storage box for storing forge elements","TM - Caja de almacenamiento para guardar elementos de forja",,
+TMForgeBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+TMForgeBoxDescTip_title,,,,,"TM - Storage box for storing forge elements","TM - Caja de almacenamiento para guardar elementos de forja",,
+TMForgeBoxDescTip,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+TMAbandoneBox,,,,,"TM - Abandobe Box","TM - Caja abandonada",,
+TMAbandoneBoxDesc,,,,,"Storage box with larger capacity","Caja de almacenamiento con mayor capacidad",,
+
+modTMHelmetLight,,,,,TM - Helmet Light Mod HD,TM - Modificación de casco con luz HD,,
+modTMHelmetLightDesc,,,,,A light hd source that can be installed into any head armor. Use your Light Source action (F) to activate...,Una fuente de luz hd que se puede instalar en cualquier casco de armadura. Usa la acción de fuente de luz (F) para encenderla...,,
+modTMHelmetLightSchematic,,,,,TM - Helmet Light Mod HD Schematic...,TM - Esquema Modificación de casco con luz HD...,,
+
+modTMHelmetLightMed,,,,,TM - Helmet Light Mod HD Med,TM - Modificación de casco con luz HD Med,,
+modTMHelmetLightMedDesc,,,,,A light hd source that can be installed into any head armor. Use your Light Source action (F) to activate...,Una fuente de luz hd que se puede instalar en cualquier casco de armadura. Usa la acción de fuente de luz (F) para encenderla...,,
+modTMHelmetLightMedSchematic,,,,,TM - Helmet Light Mod HD Med Schematic...,TM - Esquema Modificación de casco con luz HD Med...,,
+
+modTMVehicleOffRoadHeadlightsHD,,,,,TM - Vehicle Off Road Headlights HD Mod.,TM - Modificación de luces HD todo terreno para vehículos.,,
+modTMVehicleOffRoadHeadlightsHDDesc,,,,,These off road headlights HD will brighten the path even on the darkest of nights.,Estas luces HD todo terreno iluminarán el camino hasta en las noches más oscuras.,,
+modTMVehicleOffRoadHeadlightsHDSchematic,,,,,TM - Vehicle Off Road Headlights HD Mod Schematic.,TM - Esquema Modificación de luces HD todo terreno para vehículos.,,

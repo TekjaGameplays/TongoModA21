@@ -1,0 +1,51 @@
+<config>
+
+	<append xpath="/Sounds" >
+	
+		<SoundDataNode name="TreasureChestOpen">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<Noise ID="2" noise="11" time="1.5" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/TMSounds.unity3d?TreasureChestOpen"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+
+		<SoundDataNode name="TreasureChestClose">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<Noise ID="2" noise="11" time="1" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/TMSounds.unity3d?TreasureChestClose"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="WineBottleOpen">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<Noise ID="2" noise="11" time="1" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/TMSounds.unity3d?WineBottleOpen"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+		
+		<SoundDataNode name="WineBottleClose">
+			<AudioSource name="Sounds/AudioSource_UseAction"/>
+			<Noise ID="2" noise="11" time="1" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="#@modfolder:Resources/TMSounds.unity3d?WineBottleClose"/>
+			<LocalCrouchVolumeScale name="0.5"/>
+			<CrouchNoiseScale name="0.5"/>
+			<NoiseScale name="1"/>
+			<MaxVoices name="10"/>
+			<MaxRepeatRate name="0.01"/>
+		</SoundDataNode>
+
+	</append>
+
+</config>

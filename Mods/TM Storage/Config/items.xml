@@ -1,0 +1,83 @@
+<configs>
+	
+	<!-- MODS SLOTS -->
+	<set xpath="items/item[starts-with(@name, armorMilitary)]/effect_group[@name='military armor']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[starts-with(@name, armorSteel)]/effect_group[@name='steel armor']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='ModSlots']/@value">1,1,2,2,5,6</set>
+	<set xpath="items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='ModSlots']/@value">1,1,2,2,5,6</set>
+	<set xpath="items/item[@name='gunBotT3JunkDrone']/effect_group[@name='gunBotT3JunkDrone']/passive_effect[@name='ModSlots']/@value">1,1,2,2,5,6</set>
+	
+	<set xpath="items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='ModSlots']/@value">1,1,2,2,5,6</set>
+	
+	<set xpath="items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	<set xpath="items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='ModSlots']/@value">4,4,4,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='ModSlots']/@value">4,4,4,4,5,6</set>
+	
+	<set xpath="items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='ModSlots']/@value">4,4,4,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='ModSlots']/@value">4,4,4,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='ModSlots']/@value">4,4,4,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeToolRepairT3Nailgun']/effect_group[@name='meleeToolRepairT3Nailgun']/passive_effect[@name='ModSlots']/@value">1,1,2,2,5,6</set>
+
+	<set xpath="items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='ModSlots']/@value">2,2,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+
+	<set xpath="items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<set xpath="items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='ModSlots']/@value">3,3,3,4,5,6</set>
+	
+	<append xpath="/items">
+	
+		<!-- SCHEMATIC --> 
+		<item name="modTMHelmetLightSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modTMHelmetLight"/>
+			<property name="Unlocks" value="modTMHelmetLight"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMHelmetLight" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
+		<item name="modTMHelmetLightMedSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modTMHelmetLightMed"/>
+			<property name="Unlocks" value="modTMHelmetLightMed"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMHelmetLightMed" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+		
+		<item name="modTMVehicleOffRoadHeadlightsHDSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modTMVehicleOffRoadHeadlightsHD"/>
+			<property name="Unlocks" value="modTMVehicleOffRoadHeadlightsHD"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modTMVehicleOffRoadHeadlightsHD" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>		
+		
+	</append>
+	
+</configs>

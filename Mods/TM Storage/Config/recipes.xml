@@ -1,0 +1,37 @@
+<configs>
+    <append xpath="/recipes">
+		
+		<!-- Storage -->
+		
+		<recipe name="TMStorageBox" count="1" craft_time="5" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourcePaint" count="5"/>
+		</recipe>
+		
+		<!-- MODS -->
+		<recipe name="modTMHelmetLight" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+		</recipe>
+		
+		<recipe name="modTMHelmetLightMed" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+			<ingredient name="meleeToolFlashlight02" count="1"/>
+		</recipe>
+		
+		<recipe name="modTMVehicleOffRoadHeadlightsHD" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceElectricParts" count="4"/>
+			<ingredient name="resourceHeadlight" count="4"/>
+		</recipe>
+
+    </append>
+</configs>

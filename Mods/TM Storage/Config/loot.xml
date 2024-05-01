@@ -1,0 +1,154 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestHelmetLightSchematic']">
+		<item name="modTMHelmetLightSchematic"/>
+		<item name="modTMHelmetLightMedSchematic"/>
+	</append>
+	
+	<append xpath="//lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="modTMHelmetLightSchematic"/>
+		<item name="modTMHelmetLightMedSchematic"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupArmorT2']">
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLight" mod_chance=".2"/>
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLightMed" mod_chance=".2"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLight" mod_chance=".2" prob=".4"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLightMed" mod_chance=".2" prob=".4"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupMilitaryGear']">
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLight" mod_chance=".2"/>
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLightMed" mod_chance=".2"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupMilitaryArmor']">
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLight" mod_chance=".2"/>
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLightMed" mod_chance=".2"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+		<item name="modTMHelmetLight"/>
+		<item name="modTMHelmetLightMed"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='prefabQuestLoot']">
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestArmorT2']">
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLight" mod_chance=".2"/>
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLightMed" mod_chance=".2"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLight" mod_chance=".2" loot_prob_template="medLow"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLightMed" mod_chance=".2" loot_prob_template="medLow"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg02']">
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1" loot_prob_template="veryLow"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong02']">
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1" loot_prob_template="veryLow"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1" loot_prob_template="veryLow"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLight" mod_chance=".2" loot_prob_template="veryLow"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLightMed" mod_chance=".2" loot_prob_template="veryLow"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss02']">
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1" loot_prob_template="veryLow"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1" loot_prob_template="veryLow"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLight" mod_chance=".2" loot_prob_template="Low"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLightMed" mod_chance=".2" loot_prob_template="Low"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleModSchematics01']">
+		<item name="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='vehicleMods']">
+		<item name="modTMVehicleOffRoadHeadlightsHD" loot_prob_template="ProbT1Cap"/>
+	</append>
+
+	<append xpath="/lootcontainers">
+
+		<lootgroup name="grouppalletPolymerSmall" count="all">
+			<item name="resourceScrapPolymers" count="1,5"/>
+			<item name="resourcePaper" count="1,5"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletPolymerMedium" count="all">
+			<item name="resourceScrapPolymers" count="2,5"/>
+			<item name="resourcePaper" count="2,5"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletPolymerLarge" count="all">
+			<item name="resourceScrapPolymers" count="3,5"/>
+			<item name="resourcePaper" count="3,5"/>
+		</lootgroup>
+		
+		<lootgroup name="grouppalletCardboard" count="all">
+			<item name="resourcePaper" count="30"/>
+			<item group="skillMagazines" count="1" loot_prob_template="high"/>
+		</lootgroup>
+		
+		<lootgroup name="groupAcidBarrel" count="all">
+			<item name="resourceAcid" count="1" loot_prob_template="low"/>
+			<item name="ammoGasCan" count="10,50"/>
+		</lootgroup>
+		
+		<lootcontainer name="palletCardboard" count="1" size="4,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item group="grouppalletCardboard"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMStorageXL" count="0" size="10,11" sound_open="TreasureChestOpen" sound_close="TreasureChestClose" loot_quality_template="qualBaseTemplate">
+			<item name="cobweb" count="1,2"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMammoPileSmall" size="6,1" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+			<item group="groupAmmoPileSmall"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMammoPileLarge" size="6,2" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+			<item group="groupAmmoPileLarge"/>
+		</lootcontainer>
+		
+		<lootcontainer name="PolymerBarrel" count="1" size="6,3" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">>
+			<!--<item name="resourceScrapPolymers" count="10,50"/>-->
+			<item name="drinkJarRiverWater" count="1,5"/>
+		</lootcontainer>
+		
+		<lootcontainer name="AcidBarrel" count="1" size="6,3" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate">
+			<item name="resourceAcid" count="0,1"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMWineBottle" count="1" size="6,1" sound_open="WineBottleOpen" sound_close="WineBottleClose" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item name="drinkJarRiverWater" count="1"/>
+		</lootcontainer>
+		
+		<lootcontainer name="TMcntToaster" count="1" size="6,1" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+			<item name="foodShamSandwich" count="0,2"/>
+		</lootcontainer>
+		
+		<lootcontainer name="iceMachine" count="1,3" size="4,1" destroy_on_close="false" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template">
+			<item name="resourceSnowBall" count="5,10"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerSmall" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item group="grouppalletPolymerSmall"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerMedium" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item group="grouppalletPolymerMedium"/>
+		</lootcontainer>
+		
+		<lootcontainer name="palletPolymerLarge" count="1,2" size="6,1" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item group="grouppalletPolymerLarge"/>
+		</lootcontainer>
+		
+	</append>
+
+</configs>

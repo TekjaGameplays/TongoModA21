@@ -1,0 +1,43 @@
+<configs>
+
+	<insertAfter xpath="/traders/traderstage_templates/traderstage_template[@name='modsTier3']">
+		<traderstage_template name="modsTier4" min="200" max="999999" />
+	</insertAfter>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='rareBooks']">		
+		<item name="modTMHelmetLightSchematic" count="1" prob="0.25"/>
+		<item name="modTMHelmetLightMedSchematic" count="1" prob="0.25"/>
+	</append>	
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorMods']">		
+		<item name="modTMHelmetLight"/>
+		<item name="modTMHelmetLightMed"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='hats']">		
+		<item name="armorMiningHelmet" quality="1,5" mods="modTMHelmetLight" mod_chance="1"/>
+		<item name="armorMiningHelmet" quality="1,5" mods="modTMHelmetLightMed" mod_chance="1"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT1Light']">		
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1" quality="1,5"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1" quality="1,5"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT2Light']">		
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLight" mod_chance=".2" quality="1,5"/>
+		<item name="armorMilitaryHelmet" mods="modTMHelmetLightMed" mod_chance=".2" quality="1,5"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupArmorT2Heavy']">		
+		<item name="armorSwatHelmet" mods="modTMHelmetLight" mod_chance=".2" quality="1,3"/>
+		<item name="armorSwatHelmet" mods="modTMHelmetLightMed" mod_chance=".2" quality="1,3"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLight" mod_chance="1" quality="1,3"/>
+		<item name="armorMiningHelmet" mods="modTMHelmetLightMed" mod_chance="1" quality="1,3"/>
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsVehiclesMods']">		
+		<item name="modTMVehicleOffRoadHeadlightsHDSchematic"/>
+	</append>
+
+</configs>
