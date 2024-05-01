@@ -1,8 +1,0 @@
-﻿<raiz>
-
-
-	<!-- INCLUDE NEW BACKGROUND -->
-	
-	<set xpath="/windows/window[@name='menuBackground']/texture[@name='bgTexture']/@texture">@modfolder:UIAtlases/Background/fondo_tongomod_logo_BN_TXT.png</set>
-
-</raiz>
