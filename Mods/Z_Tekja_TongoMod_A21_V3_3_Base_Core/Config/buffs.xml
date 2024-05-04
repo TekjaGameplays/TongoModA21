@@ -239,7 +239,7 @@
 	  <!-- TRIGGERED_BY: Items = FoodCandy7DaysTM -->
 	  <!-- Jawbreakers got nuthin' on us! -->
 	  <!-- Increase the amount of wood, ore and stone that you harvest with mining tools. -->
-	  <buff name="buffFoodCandy7DaysTM" name_key="FoodCandy7DaysTM" description_key="FoodCandy7DaysTMDesc" icon="ui_game_symbol_candy_rock_busters">
+	  <buff name="buffFoodCandy7DaysTM" name_key="foodCandy7DaysTM" description_key="foodCandy7DaysTMDesc" icon="ui_game_symbol_candy_rock_busters">
 		  <stack_type value="replace"/>
 		  <duration value="0"/>
 		  <display_value value=".buffFoodCandy7DaysTMDisplay"/>

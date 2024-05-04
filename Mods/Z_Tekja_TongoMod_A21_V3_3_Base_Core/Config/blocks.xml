@@ -342,7 +342,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 		
@@ -393,7 +393,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -447,7 +447,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -506,7 +506,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -560,7 +560,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -615,7 +615,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -668,7 +668,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
@@ -724,7 +724,7 @@
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="TakeDelay" value="15"/>
+			<property name="TakeDelay" value="3"/>
 		</block>
 
 
