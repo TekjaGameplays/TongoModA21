@@ -2189,15 +2189,21 @@
 				<display_value name="dDuration" value="60"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="22"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
-				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>-->
+				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value=".1"/>-->
 
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="300">
-					<!--<requirement name="CVarCompare" cvar="$buffFoodCandy7DaysTMDuration" operation="GT" value="300"/>-->
+				<!--<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="300">
 				</triggered_effect>
 
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodCandy7DaysTM"/>-->
+
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="add" value="363"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="1083">
+					<requirement name="CVarCompare" cvar="$buffFoodCandy7DaysTMDuration" operation="GT" value="1083"/>
+				</triggered_effect>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffFoodCandy7DaysTM"/>
 				
+			
 			</effect_group>
 
 
@@ -3771,7 +3777,7 @@
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="MresourceGraphite"/>
-			<property name="Stacknumber" value="6000"/>
+			<property name="Stacknumber" value="10000"/>
 			<property name="FuelValue" value="5"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="EconomicBundleSize" value="10"/>
@@ -3787,7 +3793,7 @@
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Stacknumber" value="6000"/>
+			<property name="Stacknumber" value="10000"/>
 			<property name="EconomicValue" value="100"/>
 			<property name="Group" value="Resources,OchemiSci"/>
 			<property name="CraftingIngredientTime" value="15"/>
@@ -3807,7 +3813,7 @@
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="1000"/>
+			<property name="Stacknumber" value="10000"/>
 			<property name="Weight" value="10"/>
 			<property name="EconomicValue" value="100"/>
 			<property name="CraftingIngredientTime" value="9"/>
@@ -3825,7 +3831,7 @@
 			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mwood"/>
-			<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+			<property name="Stacknumber" value="10000"/> 
 			<property name="FuelValue" value="800"/>
 			<property name="EconomicValue" value="10"/>
 			<property name="EconomicBundleSize" value="10"/>
@@ -4710,7 +4716,8 @@
 				<property name="Upgrade_hit_offset" value="-5"/>
 				<property name="Repair_action_sound" value="nailgun_fire"/>
 				<property name="Upgrade_action_sound" value="nailgun_fire"/>
-				<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoor1_v1,vaultDoor01,scrapHatch_v1,vaultHatch_v1,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceNail,resourceGrapheneTM"/>
+				<property name="Allowed_upgrade_items" value="resourceWood,resourceClayLump,resourceSnowBall,resourceScrapIron,resourceForgedIron,resourceForgedSteel,resourceConcreteMix,resourceCobblestones,ironDoorBlockVariantHelper,ironDoorDoubleBlockVariantHelper,vaultDoor01,vaultDoor01Double,ironHatchBlockVariantHelper,vaultHatch01,cellarDoorDoubleIron,cellarDoorDoubleSteel,shuttersIronBlockVariantHelper,shuttersSteelBlockVariantHelper,resourceYuccaFibers,resourceCloth,resourceScrapPolymers,resourceGrapheneTM"/>
+
 			</property>
 			
 			<effect_group name="meleeToolRepairMegaNailgunTM" tiered="false">
@@ -5830,7 +5837,7 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorGrapheneHelmetTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
 			<property name="Tags" value="head,armor,armorHead,heavyArmor,heavyArmorPenalty,canHaveCosmetic,armorHeavySkill,grapheneArmor,grapheneArmorDeg"/>
@@ -5874,7 +5881,7 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorGrapheneChestTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
 			<property name="Tags" value="upperbody,chest,armor,armorChest,heavyArmor,heavyArmorPenalty,canHaveCosmetic,armorHeavySkill,grapheneArmor,grapheneArmorDeg"/>
@@ -5910,7 +5917,7 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorGrapheneGlovesTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
 			<property name="Tags" value="upperbody,hands,armor,armorHands,heavyArmor,heavyArmorPenalty,canHaveCosmetic,armorHeavySkill,grapheneArmor,grapheneArmorDeg"/>
@@ -5946,7 +5953,7 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorGrapheneLegsTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
 			<property name="Tags" value="lowerbody,legs,armor,armorLegs,heavyArmor,heavyArmorPenalty,canHaveCosmetic,armorHeavySkill,grapheneArmor,grapheneArmorDeg"/>
@@ -5982,7 +5989,7 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorGrapheneBootsTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
 			<property name="Tags" value="lowerbody,feet,armor,armorFeet,heavyArmor,heavyArmorPenalty,canHaveCosmetic,armorHeavySkill,grapheneArmor,grapheneArmorDeg"/>
@@ -6032,28 +6039,32 @@
 		<!-- GRAPHENE SUIT -->
 
 		<item name="armorClothHatGrapheneTM">
-			<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmorGrapheneT1TM"/>
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothHatGrapheneTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
-			<property name="Tags" value="head,armor,armorHead,lightArmor,padded,canHaveCosmetic,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
+			<property name="Tags" value="head,armor,armorHead,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
 			<property name="EquipSlot" value="Head"/>
 			<effect_group name="cloth armor">
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,5,5,6" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_add" value="12.5,14.5" tier="1,6"/>
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="-.1,.3"/>
 				<passive_effect name="ElementalDamageResist" operation="base_add" value="12.5,14.5" tier="1,6" tags="heat,electrical"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="-.1,.3"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="0.030,0.041" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="400,500" tier="1,6"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="grapheneArmorDeg"/>
 				<passive_effect name="Mobility" operation="perc_add" value="-.05"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0342" tags="walking"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.0644" tags="running"/>
 				<display_value name="dStaminaChangeOT" value="-.64"/>
+				<!--<passive_effect name="NoiseMultiplier" operation="perc_add" value=".1"/><display_value name="dNoiseMultiplier" value=".1"/>-->
+
 			</effect_group>
 			<property class="UMA">
 				<property name="Mesh" value="armor_hazmat_head"/>
@@ -6074,10 +6085,10 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothJacketGrapheneTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
-			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,padded,canHaveCosmetic,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
+			<property name="Tags" value="upperbody,chest,armor,armorChest,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
 			<property name="EquipSlot" value="Chest"/>
 			<effect_group name="cloth armor">
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,5,5,6" tier="1,2,3,4,5,6"/>
@@ -6106,10 +6117,10 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothGlovesGrapheneTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
-			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,padded,canHaveCosmetic,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
+			<property name="Tags" value="upperbody,hands,armor,armorHands,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
 			<property name="EquipSlot" value="Hands"/>
 			<effect_group name="cloth armor">
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,5,5,6" tier="1,2,3,4,5,6"/>
@@ -6138,10 +6149,10 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothPantsGrapheneTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
-			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,padded,canHaveCosmetic,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
+			<property name="Tags" value="lowerbody,legs,armor,armorLegs,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
 			<property name="EquipSlot" value="Legs"/>
 			<effect_group name="cloth armor">
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,5,5,6" tier="1,2,3,4,5,6"/>
@@ -6170,10 +6181,10 @@
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothBootsGrapheneTMDesc"/>
 			<property name="Material" value="MresourceGraphene"/>
-			<property name="Weight" value="0"/>
+			<property name="Weight" value="1"/>
 			<property name="EconomicValue" value="5000"/>
 			<property name="TraderStageTemplate" value="armorTier3"/>
-			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,padded,canHaveCosmetic,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
+			<property name="Tags" value="lowerbody,feet,armor,armorFeet,lightArmor,lightArmorPenalty,canHaveCosmetic,lightArmorDeg,armorLightSkill,grapheneArmor,grapheneArmorDeg"/>
 			<property name="EquipSlot" value="Feet"/>
 			<effect_group name="cloth armor">
 				<passive_effect name="ModSlots" operation="base_set" value="4,4,4,5,5,6" tier="1,2,3,4,5,6"/>

@@ -23,6 +23,12 @@
 			<passive_effect name="WaterChangeOT" operation="base_subtract" value=".05"/>
 		</effect_group>
 	</append>
+
+	<append xpath="/buffs/buff[@name='god']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="0"/>
+		</effect_group>
+	</append>
 	
 
 	<!-- CAT & DOG COMBINATED BUFF  -->
@@ -257,6 +263,9 @@
 			  </triggered_effect>
 			  <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffFoodCandy7DaysTMDisplay" operation="set" value="0"/>
 			  <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffFoodCandy7DaysTMDuration" operation="set" value="0"/>
+
+			  <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			  
 		  </effect_group>
 
 		  <effect_group>

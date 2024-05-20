@@ -738,7 +738,7 @@
 		<objective type="FetchKeep" id="resourceGraphite" value="5000"/>
 
 		<reward type="Item" id="questRewardConstructorMagazineBundle" value="1"/>
-		<reward type="Item" id="meleeToolRepairMegaNailgunTMSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeToolRepairMegaNailgunTMSchematic" value="1"/>-->
 		<reward type="Item" id="casinoCoin" value="800"/>
 		<reward type="Exp" value="1600"/>
 		<reward type="Quest" id="quest_Builder28"/>
@@ -757,7 +757,7 @@
 		<objective type="FetchKeep" id="resourceGrapheneTM" value="500"/>
 
 		<reward type="Item" id="questRewardConstructorMagazineBundle" value="1"/>
-		<reward type="Item" id="meleeToolMegaChainsawTMSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeToolMegaChainsawTMSchematic" value="1"/>-->
 		<reward type="Item" id="casinoCoin" value="800"/>
 		<reward type="Exp" value="1600"/>
 		<reward type="Quest" id="quest_Builder29"/>
@@ -776,7 +776,7 @@
 		<objective type="BlockUpgrade" id="steelShapes" value="50"/>
 
 		<reward type="Item" id="questRewardConstructorMagazineBundle" value="1"/>
-		<reward type="Item" id="meleeToolMegaAugerTMSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeToolMegaAugerTMSchematic" value="1"/>-->
 		<reward type="Item" id="casinoCoin" value="800"/>
 		<reward type="Exp" value="1600"/>
 		<reward type="Quest" id="quest_Builder30"/>
@@ -2555,7 +2555,7 @@
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="FetchKeep" id="foodCanCatfood" value="5" />
+		<objective type="FetchKeep" id="foodCanCatfood" value="30" />
 
 		<reward type="Item" id="questRewardChefMagazineBundle" value="1"/>
 		<reward type="Item" id="foodExtraCatTMSchematic" value="1"/>
@@ -2574,7 +2574,7 @@
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="FetchKeep" id="foodExtraCatTM" value="10"/>
+		<objective type="FetchKeep" id="foodExtraCatTM" value="3"/>
 
 		<reward type="Item" id="questRewardChefMagazineBundle" value="1"/>
 		<reward type="Item" id="foodCanDogfoodSchematic" value="1"/>
@@ -2593,7 +2593,7 @@
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="FetchKeep" id="foodCanDogfood" value="5" />
+		<objective type="FetchKeep" id="foodCanDogfood" value="30" />
 
 		<reward type="Item" id="questRewardChefMagazineBundle" value="1"/>
 		<reward type="Item" id="foodExtraDogTMSchematic" value="1"/>
@@ -2612,7 +2612,7 @@
 		<property name="difficulty" value="easy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="FetchKeep" id="foodExtraDogTM" value="10"/>
+		<objective type="FetchKeep" id="foodExtraDogTM" value="3"/>
 
 		<reward type="Item" id="questRewardChefMagazineBundle" value="1"/>
 		<reward type="Item" id="drinkRomulanBeerTMSchematic" value="1"/>
@@ -4218,7 +4218,7 @@
 		<objective type="FetchKeep" id="vehicleMinibikePlaceable" value="1"/>
 
 		<reward type="Item" id="questRewardMechanicMagazineBundle" value="1"/>
-		<reward type="Item" id="meleeToolSalvageMegaImpactDriverTMSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeToolSalvageMegaImpactDriverTMSchematic" value="1"/>-->
 		<reward type="Item" id="casinoCoin" value="200"/>
 		<reward type="Exp" value="400"/>
 		<reward type="Quest" id="quest_Mechanic23"/>
@@ -5582,7 +5582,7 @@
 
 		<objective type="EntityKill" id="zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated" value="5"/>
 
-		<reward type="Item" id="meleeWpnSpikedClubSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeWpnSpikedClubSchematic" value="1"/>-->
 		<reward type="Item" id="questRewardSoldierMagazineBundle" value="1"/>
 		<reward type="Item" id="casinoCoin" value="1600"/>
 		<reward type="Exp" value="3200"/>
@@ -5783,7 +5783,7 @@
 
 		<objective type="EntityKill" id="zombieMaleHazmat,zombieMaleHazmatFeral,zombieMaleHazmatRadiated" value="5"/>
 
-		<reward type="Item" id="armorGrapheneTMSchematic" value="1"/>
+		<!--<reward type="Item" id="armorGrapheneTMSchematic" value="1"/>-->
 		<reward type="Item" id="questRewardSoldierMagazineBundle" value="1"/>
 		<reward type="Item" id="casinoCoin" value="1000"/>
 		<reward type="Exp" value="2000"/>
@@ -5986,7 +5986,7 @@
 		<objective type="EntityKill" id="zombieBiker,zombieBikerFeral,zombieBikerRadiated" value="2"/>
 		<objective type="EntityKill" id="zombiePartyGirl,zombiePartyGirlFeral,zombiePartyGirlRadiated" value="2"/>
 
-		<reward type="Item" id="meleeWpnGrapheneSledgehammerTMSchematic" value="1"/>
+		<!--<reward type="Item" id="meleeWpnGrapheneSledgehammerTMSchematic" value="1"/>-->
 		<reward type="Item" id="questRewardSoldierMagazineBundle" value="1"/>
 		<reward type="Item" id="casinoCoin" value="1600"/>
 		<reward type="Exp" value="3200"/>
