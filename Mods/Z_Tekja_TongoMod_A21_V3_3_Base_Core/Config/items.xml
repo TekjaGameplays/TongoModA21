@@ -6080,7 +6080,7 @@
 		</item>
 
 		<item name="armorClothJacketGrapheneTM">
-			<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmorGrapheneT1TM"/>
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothJacketGrapheneTMDesc"/>
@@ -6112,7 +6112,7 @@
 		</item>
 
 		<item name="armorClothGlovesGrapheneTM">
-			<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmorGrapheneT1TM"/>
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothGlovesGrapheneTMDesc"/>
@@ -6144,7 +6144,7 @@
 		</item>
 
 		<item name="armorClothPantsGrapheneTM">
-			<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmorGrapheneT1TM"/>
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothPantsGrapheneTMDesc"/>
@@ -6176,7 +6176,7 @@
 		</item>
 
 		<item name="armorClothBootsGrapheneTM">
-			<property name="Extends" value="armorClothMaster" param1="CustomIcon"/>
+			<property name="Extends" value="armorMilitaryMaster" param1="CustomIcon"/>
 			<property name="UnlockedBy" value="craftingArmorGrapheneT1TM"/>
 			<property name="Group" value="Clothing,Armor,TCArmor,Armaduras,ProArmorTM"/>
 			<property name="DescriptionKey" value="armorClothBootsGrapheneTMDesc"/>
