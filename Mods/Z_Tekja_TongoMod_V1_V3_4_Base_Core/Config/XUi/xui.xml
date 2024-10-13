@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- DEFINE COMPONENTS IN NEW MACHINES -->
+	<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_chemistryStation']" >
+		<window_group name="workstation_workingMakina" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</insertAfter>
+
+	<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_chemistryStation']" >
+		<window_group name="workstation_workingLibros" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsLibros" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</insertAfter>
+
+	<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_chemistryStation']" >
+		<window_group name="workstation_workingDysmantle" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsDysmantle"/>
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</insertAfter>
+
+	<insertAfter xpath="/xui/ruleset/window_group[@name='workstation_chemistryStation']" >
+		<window_group name="workstation_workingSemillas" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+	</insertAfter>
+
+
+	<append xpath="/xui/ruleset">
+
+		<window_group name="workstation_workingAutominerT0" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsAutoMinerT0"/>
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_workingOven" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsOven" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_workingOchemi" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsOchemi" />
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<!--<window name="windowFuel" />-->
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="workstation_workingAutominerADV" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowToolsAutoMinerADV"/>
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+
+	</append>
+	
+
+	<!-- TONGOMOD LOGO IN GAME SCREEN -->
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+		<window name="tongomodLogo" anchor="RightTop" />
+	</append>
+	
+	
+</raiz>

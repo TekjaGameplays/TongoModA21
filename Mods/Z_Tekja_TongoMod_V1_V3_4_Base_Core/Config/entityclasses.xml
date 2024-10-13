@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raiz>
+
+	<!-- ADD STARTED PACK FOR TONGOMOD -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">quest_start_tongomod</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">quest_start_tongomod</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">quest_start_tongomod</set>
+
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+	
+</raiz>
